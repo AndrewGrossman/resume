@@ -1,0 +1,95 @@
+{
+  "meta": { "theme": "jsonresume-theme-relaxed" },
+  "basics": {
+    "name": "Andrew Grossman",
+    "label": "",
+    "NoResumesInUSimage": "https://avatars.githubusercontent.com/u/1409332?v=4",
+    "email": "***REMOVED***",
+    "phone": "(410) 645-0462",
+    "summary": "",
+    "location": {
+      "CommentedOutaddress": "***REMOVED***",
+      "postalCode": "***REMOVED***",
+      "city": "Baltimore",
+      "countryCode": "US",
+      "region": "Maryland"
+    },
+    "profiles": [{
+        "url": "https://github.com/AndrewGrossman",
+        "username": "AndrewGrossman",
+        "network": "github"
+      },
+      {
+        "url": "https://www.linkedin.com/in/andrew-grossman-13a3bb10/",
+        "username": "andrew-grossman-13a3bb10",
+        "network": "linkedin"
+      }]
+  },
+  "work": [{
+    "name": "Songtrust / Downtown Music Publishing",
+    "position": "Director of Software Engineering",
+    "url": "https://songtrust.com",
+    "startDate": "2023-07-01",
+    "endDate": "2024-04-01",
+    "summary": "Engineering lead for the Songtrust product team. Responsible for the development and maintenance of the Songtrust.com web application with 30k+ active users, as well as internal facing enterprise tools. Managed a team of 6 engineers.",
+    "highlights": [
+      "Guided the technical implementation of key application features, via team planning, ticketing, and code reviews.",
+      "Completed initiative to verify user identities, reactivating stalled business partnership impacting $2M of customer earnings.",
+      "Implemented SLA for incoming support requests, ensuring 95% of requests are responded to within 24 hours. Cleared 9 month request backlog in 3 months.",
+      "Drove completion of over a dozen features that had previously stalled between code deployment and product acceptance QA activities.",
+      "Applied more comprehensive monitoring and alerting, identifying ~75% of user-facing issues before they were reported.",
+      "Assisted in cost-cutting measures, including identifying $35K/year of since-realized savings in cloud costs.",
+      "Ensured high morale and team stability, increasing overall productivity. Onboarded 3 new engineers."
+    ]
+  },
+  {
+    "name": "Songtrust / Downtown Music Publishing",
+    "position": "Engineering Manager",
+    "url": "https://songtrust.com",
+    "startDate": "2020-01-01",
+    "endDate": "2023-06-30",
+    "summary": "Team lead / back-end developer for a green-fields application managing music industry intellectual properties for the purpose of royalty collection.",
+    "highlights": [
+      "Architected data model",
+      "Set up a flexible Django/DRF environment with custom primitives for advanced Postgres feature usage",
+      "Designed and implemented a custom ETL pipeline for data ingress from multiple systems",
+      "Maintained application deployment environments (AWS EC2/RDS Postgres/S3)",
+      "Involved in and executed on departmental leadership initiatives focused on reaching an enterprise-level of governance, stability, and process.",
+      "Managed and refined team agile processes and development workflows.",
+      "Responsible for managing 9 subordinates on multiple development teams, including general software development mentoring."
+    ]
+  },
+  {
+    "name": "Songtrust / Downtown Music Publishing",
+    "position": "Senior Software Engineer",
+    "url": "https://songtrust.com",
+    "startDate": "2018-06-16",
+    "endDate": "2019-12-31",
+    "summary": "Full-stack developer on a consumer-facing Django/PostgreSQL/Ubuntu/AWS-hosted consumer-facing application for facilitating songwriter royalties collection.",
+    "highlights": [
+      "Implemented a feature to allow users to share songwriters across accounts 3 months ahead of schedule",
+      "Optimized database queries and application performance",
+      "Implemented new front-end features in a legacy jQuery/Backbone environment"
+    ]
+  }
+  ],
+  "education": [{
+    "institution": "University of Maryland, College Park",
+    "url": "https://maryland.edu/",
+    "area": "Bachelor of Science in Computer Science",
+    "commentedstudyType": "Bachelor of Science",
+    "startDate": "1998",
+    "endDate": "2001"
+  }],
+  "skills": [
+    {
+      "name": "Web Development",
+      "level": "Master",
+      "keywords": [
+        "HTML",
+        "CSS",
+        "JavaScript"
+      ]
+    }
+  ]
+}
