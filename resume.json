@@ -9,7 +9,7 @@
     "summary": "",
     "location": {
       "CommentedOutaddress": "***REMOVED***",
-      "postalCode": "***REMOVED***",
+      "commentedOutpostalCode": "***REMOVED***",
       "city": "Baltimore",
       "countryCode": "US",
       "region": "Maryland"
@@ -71,16 +71,51 @@
       "Optimized database queries and application performance",
       "Implemented new front-end features in a legacy jQuery/Backbone environment"
     ]
+  },
+  {
+    "name": "Bridgestone Commercial Solutions",
+    "position": "Software Lead / Development Manager",
+    "url": "https://commercial.bridgestone.com/",
+    "startDate": "2012",
+    "endDate": "2018",
+    "summary": "Led a team of of 8 developers to build a commercial data collection product, that served as a key differentiator in the retread service package offering to hundreds of B2B customers.",
+    "highlights": [
+      "Primary application was built using a Django/Dojo/PostgreSQL/RHEL stack.",
+      "At time of departure, the application had over 600 users and had collected over 3 million survey readings.",
+      "Implemented initial Django/Tastypie/Dojo-based patterns used as the base for the application.",
+      "Scripted imports (ETL) of third-party data from various formats into PostgreSQL database.",
+      "Assigned tasks, provided task documentation, reviewed work, and consulted on work within the engineering team.",
+      "Coordinated development activities with product manager, project manager, QA team, and target users.",
+      "Performed managerial duties, including hiring, termination, and performance reviews.",
+      "Managed developer and testing VM instances (KVM, VMWare)",
+      "Separately, served as internal technical lead on a customer web portal project involving shared responsibility between multiple internal teams and consultant teams. Project budget was above $2M. Over 25 technical staff participated."
+    ]
   }
   ],
-  "education": [{
-    "institution": "University of Maryland, College Park",
-    "url": "https://maryland.edu/",
-    "area": "Bachelor of Science in Computer Science",
-    "commentedstudyType": "Bachelor of Science",
-    "startDate": "1998",
-    "endDate": "2001"
-  }],
+  "education": [
+    {
+      "institution": "University of Baltimore",
+      "url": "https://www.ubalt.edu/",
+      "area": "Master of Business Administration",
+      "endDate": "2014"
+    },
+    {
+      "institution": "UMBC",
+      "url": "https://umbc.edu/",
+      "area": "Master of Science in Computer Science",
+      "endDate": "2007",
+      "courses": [
+        "Completed research paper in algorithm development including simulation and statistical analysis entitled \"Indirect Data Reporting in Wireless Sensor Networks with Multiple Mobile Nodes.\""
+      ]
+    },
+    {
+      "institution": "University of Maryland, College Park",
+      "url": "https://maryland.edu/",
+      "area": "Bachelor of Science in Computer Science",
+      "commentedstudyType": "Bachelor of Science",
+      "endDate": "2001"
+    }
+  ],
   "skills": [
     {
       "name": "Web Development",
