@@ -101,7 +101,14 @@
       "Developed CakePHP-based data reporting website for corporate usage.",
       "Developed Visual Basic 6 / Access based reporting application for use by over 100 commercial clients."
     ]
-  }
+  },
+    {
+      "name": "Service for Stifel Nicolaus",
+      "position": "Software Consultant",
+      "startDate": "2007",
+      "endDate": "2018",
+      "summary": "Developed advanced Microsoft Excel applications w/VBA for stock selection and tracking."
+    }
   ],
   "education": [
     {
