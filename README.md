@@ -14,9 +14,9 @@ Install updated theme
 
 Generate HTML:
 
-```node_modules/resume-cli/build/main.js export resume1.html --theme jsonresume-theme-relaxed```
+```node_modules/resume-cli/build/main.js export "Andrew Grossman - Resume.html" --theme jsonresume-theme-relaxed```
 
 Generate PDF:
 
-```node_modules/resume-cli/build/main.js export resume1.pdf --theme jsonresume-theme-relaxed```
+```node_modules/resume-cli/build/main.js export "Andrew Grossman - Resume.pdf" --theme jsonresume-theme-relaxed```
 
