@@ -1,141 +1,343 @@
-<!DOCTYPE html>
-    <html lang="en" style="">
-      <head>
-        <meta charset="utf-8">
-        
-    <title>Andrew Grossman</title>
-    
-  
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap">
-        <style>:root{color-scheme:light dark;--color-background-light: #ffffff;--color-dimmed-light: #f3f4f5;--color-primary-light: #191e23;--color-secondary-light: #6c7781;--color-accent-light: #0073aa;--color-background-dark: #191e23;--color-dimmed-dark: #23282d;--color-primary-dark: #fbfbfc;--color-secondary-dark: #ccd0d4;--color-accent-dark: #00a0d2;--color-background: var(--color-background-light);--color-dimmed: var(--color-dimmed-light);--color-primary: var(--color-primary-light);--color-secondary: var(--color-secondary-light);--color-accent: var(--color-accent-light);--scale-ratio: 1.25;--scale0: 1rem;--scale1: calc(var(--scale0) * var(--scale-ratio));--scale2: calc(var(--scale1) * var(--scale-ratio));--scale3: calc(var(--scale2) * var(--scale-ratio));--scale4: calc(var(--scale3) * var(--scale-ratio));--scale5: calc(var(--scale4) * var(--scale-ratio))}@media (prefers-color-scheme: dark){:root{--color-background: var(--color-background-dark);--color-dimmed: var(--color-dimmed-dark);--color-primary: var(--color-primary-dark);--color-secondary: var(--color-secondary-dark);--color-accent: var(--color-accent-dark)}}*{box-sizing:border-box;margin:0;padding:0}html{font-size:14px}body{background:var(--color-background);color:var(--color-primary);display:grid;font:1em/1.5 Lato,sans-serif;gap:2em;grid-template-columns:[full-start] 1fr [main-start side-start] minmax(min-content,12em) [side-end content-start] minmax(min-content,36em) [main-end content-end] 1fr [full-end];grid-template-rows:auto [content] 0;margin-bottom:4em}body:before{content:"";grid-column:full;grid-row:content}ol,ul{padding-left:1em}:not(.icon-list,.tag-list)>li+li{margin-top:.4em}li::marker,.network{color:var(--color-secondary)}a{color:var(--color-accent);text-decoration:none}a:focus,a:hover{text-decoration:underline}h1,h2,h3,h5{font-weight:400}h1,h2,h3{line-height:1.2}h1{font-size:var(--scale5)}h2{color:var(--color-secondary);font-size:var(--scale4)}h3{color:var(--color-secondary);font-size:var(--scale3);grid-column:side;margin-bottom:1rem}h4{font-size:var(--scale2)}h5{font-size:var(--scale1)}h6{font-size:var(--scale0)}blockquote{border-left:.2em solid var(--color-dimmed);padding-left:1em}cite{color:var(--color-secondary);font-style:inherit}cite:before{content:"— "}svg{margin-right:.2em;vertical-align:text-bottom}.masthead{background:var(--color-dimmed);display:inherit;gap:inherit;grid-column:full;grid-template-columns:inherit;padding:4em 0;text-align:center}.masthead>*,section{grid-column:main}.masthead>img{border:4px solid;border-radius:50%;margin:0 auto;max-width:12em}article>*+*,blockquote>*+*,.timeline>div>*+*{margin-top:.6em}.meta{color:var(--color-secondary)}.stack{display:grid;gap:1.5em}.icon-list{display:flex;flex-wrap:wrap;gap:.4em 1em;justify-content:center;list-style:none;padding:0}.grid-list{display:grid;gap:1em}.tag-list{display:flex;flex-wrap:wrap;gap:.4em;list-style:none;padding:0}.tag-list>li{background:var(--color-dimmed);border-radius:.2em;padding:.2em .6em}.timeline>div{position:relative}.timeline>div:not(:last-child){padding-bottom:1rem}.timeline>div:not(:last-child):before{content:"";position:absolute;top:1rem;left:-15px;width:2px;height:100%;background:var(--color-secondary)}.timeline>div:not(:only-child):after{content:"";position:absolute;top:.6rem;left:-20px;width:8px;height:8px;background:var(--color-secondary);border:2px solid var(--color-background);border-radius:50%}@media print,(min-width: 48em){h3{text-align:right;margin-bottom:inherit}.masthead{text-align:inherit}.masthead>*,section{grid-column:content}.masthead img{grid-column:side;grid-row:span 2;max-width:100%}section{display:contents}.icon-list{flex-direction:column}.grid-list{grid-template-columns:repeat(auto-fit,minmax(calc((100% - 1em)/2),1fr))}}
-</style>
-      </head>
-      <body>
-        
-    <header class="masthead">
-      <img src="https://avatars.githubusercontent.com/u/1409332?v=4" alt="">
-      <div>
-        <h1>Andrew Grossman</h1>
-        
-      </div>
-      
-      <ul class="icon-list">
-        
-          <li>
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-            Baltimore, United States
-          </li>
-        
-        
-          <li>
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-            <a href="mailto:***REMOVED***">***REMOVED***</a>
-          </li>
-        
-        
-          <li>
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-phone"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
-            <a href="tel:(410)274-4402">***REMOVED***</a>
-          </li>
-        
-        
-        
-          <li>
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
-            <a href="https://github.com/AndrewGrossman">AndrewGrossman</a>
-            <span class="network">(github)</span>
-          </li>
-        
-          <li>
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
-            <a href="https://www.linkedin.com/in/andrew-grossman-13a3bb10/">andrew-grossman-13a3bb10</a>
-            <span class="network">(linkedin)</span>
-          </li>
-        
-      </ul>
-    </header>
-  
-        
-    <section id="work">
-      <h3>Work</h3>
-      <div class="stack">
-        
-          <article>
-            <header>
-              <h4><a href="https://songtrust.com">Songtrust / Downtown Music Publishing</a></h4>
-              <div class="meta">
-                
-              </div>
-            </header>
-            <div class="timeline">
-              
-                <div>
-                  <div>
-                    <h5>Director of Software Engineering</h5>
-                    <div class="meta">
-                      <div><time datetime="2023-07-01">Jul 2023</time> – <time datetime="2024-04-01">Apr 2024</time></div>
-                      
-                    </div>
-                  </div>
-                  <p>Engineering lead for the Songtrust product team. Responsible for the development and maintenance of the Songtrust.com web application and API as well as internal facing enterprise tools. Managed a team of 6 engineers.</p>
-                  
-                    <ul>
-                      <li><p>Completed initiative to verify user identities, reactivating stalled business partnership impacting $2M of customer earnings.</p></li><li><p>Assisted in cost-cutting measures, including identifying $35K/year of since-realized savings in cloud costs.</p></li><li><p>Implemented SLA for incoming support requests, ensuring 95% of requests are responded to within 24 hours. Cleared 9 month request backlog in 3 months.</p></li>
-                    </ul>
-                  
-                </div>
-              
-            </div>
-          </article>
-        
-      </div>
-    </section>
-  
-        
-        
-    <section id="education">
-      <h3>Education</h3>
-      <div class="stack">
-        
-          <article>
-            <header>
-              <h4><a href="https://maryland.edu/">University of Maryland, College Park</a></h4>
-              <div class="meta">
-                <strong>Computer Science</strong>
-                
-              </div>
-            </header>
-            <p>Bachelor of Science</p>
-            
-          </article>
-        
-      </div>
-    </section>
-  
-        
-        
-        
-        
-        
-    <section id="skills">
-      <h3>Skills</h3>
-      <div class="grid-list">
-        
-          <div>
-            <h4>Web Development</h4>
-            
-              <ul class="tag-list">
-                <li>HTML</li><li>CSS</li><li>JavaScript</li>
-              </ul>
-            
-          </div>
-        
-      </div>
-    </section>
-  
-        
-        
-        
-      </body>
-    </html>
+<!DOCTYPE html><html lang="en" dir="ltr"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="generator" content="jsonresume-theme-relaxed v0.1.9"><meta name="author" content="Andrew Grossman"><meta property="og:site_name" content="Andrew Grossman"><meta name="twitter:card" content="summary"><link rel="stylesheet" type="text/css" href="https://use.typekit.net/wav6afv.css"><style>:root{font-size:10pt}:root {
+    font-family: "Lato", sans-serif;
+    text-rendering: geometricPrecision
+}
+
+@media not print {
+    @page {
+        margin: 2ex
+    }
+
+    section {
+        break-inside: avoid-page
+    }
+}
+
+@media print {
+    @page {
+        margin: 2.5cm
+    }
+}
+
+body {
+    padding: 0
+}
+
+@media only screen and (min-width: 297mm) {
+    body {
+        height: 210mm;
+        width: 297mm;
+        margin: auto
+    }
+}
+
+main {
+    margin: 0 1ex
+}
+
+header {
+    height: 5em;
+    margin: 1ex 1.5ex -1ex
+}
+
+article:not(.flex) > h3 {
+    margin-block-end: .75em
+}
+
+h1 {
+    font-size: 2em;
+    font-weight: 600;
+    margin: .5em 0
+}
+
+h2 {
+    font-size: 1.5em;
+    font-weight: 400;
+    margin: .5em 0
+}
+
+h3 {
+    font-size: 1.40em;
+    font-weight: 600
+}
+
+h3::before {
+    content: " ";
+    height: 0;
+    width: calc(100% + 2ex);
+    display: block;
+    position: relative;
+    padding-block-start: 1em;
+    border-block-start: .2ex solid #789;
+    left: -1ex;
+    right: -1ex
+}
+
+strong {
+    font-size: 1.1em;
+    font-weight: 600
+}
+
+b {
+    font-weight: 600
+}
+
+small {
+    font-size: .9em
+}
+
+em {
+    font-style: normal;
+    text-decoration: underline #000 solid .15ex;
+    text-underline-position: under
+}
+
+address {
+    font-style: inherit
+}
+
+a, a:hover {
+    color: inherit;
+    outline: none;
+    text-decoration: underline #0ff solid .15ex;
+    text-underline-position: under
+}
+
+mark {
+    color: #fff;
+    background-color: #008b8b;
+    border-radius: .2em;
+    display: inline-block;
+    padding: .15em .25em;
+    margin: 0 0 .2em .2em;
+    print-color-adjust: exact
+}
+
+ul {
+    padding-inline-start: 2em;
+    list-style-type: disclosure-closed
+}
+
+progress {
+    height: .5em;
+    border: 0;
+    width: 95%;
+    background-color: #808080;
+    display: inline-block;
+    border-radius: .25em;
+    margin: .25em 0;
+    print-color-adjust: exact
+}
+
+progress::-moz-progress-bar {
+    border-radius: .25em;
+    background-color: #008000;
+    print-color-adjust: exact
+}
+
+progress::-webkit-progress-value {
+    border-radius: .25em;
+    background-color: #008000;
+    print-color-adjust: exact
+}
+
+progress::-webkit-progress-bar {
+    border-radius: .25em
+}
+
+time + :is(time,span)::before {
+    content: "–";
+    padding: 0 .25em
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 0 .75em
+}
+
+.flex > h3 {
+    flex-basis: 100%
+}
+
+.flex > section {
+    flex: 1
+}
+
+.details > :first-child {
+    margin-block-end: 1em
+}
+
+.details:not(:first-of-type) {
+    padding-block-start: 1em
+}
+
+.details:not(:last-of-type) {
+    padding-block-end: 1em;
+    border-block-end: .15ex dashed #2f4f4f
+}
+
+.details.next-workplace-repeats-true {
+    border-block-end: .15ex dotted #4f6f6f
+}
+
+.work.details strong.workplace a, .work.details strong.workplace {
+    font-size: 1.1em;
+}
+
+.wrap {
+    line-height: 1.5em;
+    white-space: pre-wrap
+}
+
+.icon {
+    height: .9em;
+    width: .9em;
+    vertical-align: middle;
+    margin-inline-end: .2em
+}
+
+h3 > .icon {
+    margin-block-end: .4ex
+}
+
+.icon[src$="map-pin.svg"] {
+    vertical-align: initial;
+    margin-block-start: -.4ex
+}
+
+.icon[src$="trophy.svg"], .icon[src$="document-text.svg"] {
+    margin-block-start: -.2ex
+}
+
+.icon[src$="heart.svg"], .icon[src$="academic-cap.svg"] {
+    margin-block-start: -.1ex
+}
+
+.icon[src$="github"] {
+    margin-block-end: .4ex
+}
+
+.icon[src$="element"] {
+    margin-block-end: .3ex
+}
+
+.icon[src$="signal"], .icon[src$="globe-alt.svg"] {
+    margin-block-end: .2ex
+}
+
+.icon[src$="linkedin"], .icon[src$="phone.svg"], .icon[src$="envelope.svg"] {
+    margin-block-end: .1ex
+}
+
+.float {
+    float: inline-end;
+    margin-inline-end: .75em
+}
+
+.sep {
+    margin-block-start: .25em
+}
+
+.sep > b::after {
+    content: "·";
+    padding: 0 .5em
+}
+
+.education > div + div {
+    margin-block-start: 1.5ex
+}
+
+.education .courses > ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin-block-end: 0
+}
+
+.education .courses > ul > li {
+    flex-basis: 50%
+}
+
+.project > div + div {
+    margin-block-start: 1.5ex
+}
+
+.reference {
+    background: #d3d3d3;
+    border-radius: 1.5ex;
+    padding: .5em 1em;
+    print-color-adjust: exact
+}
+
+.reference > blockquote {
+    font-style: italic;
+    quotes: "“" "”";
+    margin: 0
+}
+
+.reference > blockquote::before {
+    content: open-quote;
+    font-size: 2em;
+    line-height: .1em;
+    vertical-align: -.4em;
+    color: #789;
+    padding-inline-end: .25em
+}
+
+.reference > blockquote::after {
+    content: close-quote;
+    font-size: 2em;
+    line-height: .1em;
+    vertical-align: -.4em;
+    color: #789;
+    padding-inline-start: .2em
+}
+
+.reference > b::before {
+    content: "–";
+    padding: 0 .5em 0 0
+}
+
+:is(.skill,.language,.interest) > div {
+    margin-block-start: .75ex
+}
+
+#summary {
+    padding-block-end: 1em;
+    border-block-end: .1ex dotted #a9a9a9
+}
+
+#image {
+    display: contents
+}
+
+#image > img {
+    float: inline-end;
+    max-height: 90%;
+    border: .3ex solid #006400;
+    border-radius: 15%
+}
+
+:is(#contact,#profiles) > div {
+    margin-block-end: .25ex
+}
+
+@supports not (float:inline-end) {
+    html[dir="ltr"] #image > img, html[dir="ltr"] .float {
+        float: right
+    }
+
+    html[dir="rtl"] #image > img, html[dir="rtl"] .float {
+        float: left
+    }
+}
+
+article:last-child {
+    padding-bottom: 20px; /* Adjust the padding value as needed */
+}
+
+section.education.details {
+    padding-bottom: 1.75em;
+}
+</style><title>Andrew Grossman</title></head><body><header class="flex"><section><h1 id="name">Andrew Grossman</h1></section></header><main><article id="about"><h3><img class="icon" alt="" src="https://cdn.statically.io/gh/tailwindlabs/heroicons/master/src/24/outline/identification.svg">Personal Info</h3><address class="flex"><section id="contact"><div class="url"><img class="icon" alt="E-mail" src="https://cdn.statically.io/gh/tailwindlabs/heroicons/master/src/24/outline/envelope.svg"><a rel="me" href="mailto:***REMOVED***">***REMOVED***</a></div><div class="url"><img class="icon" alt="Phone" src="https://cdn.statically.io/gh/tailwindlabs/heroicons/master/src/24/outline/phone.svg"><a rel="me" href="tel:(410) 645-0462">(410) 645-0462</a></div><div><img class="icon" alt="Address" src="https://cdn.statically.io/gh/tailwindlabs/heroicons/master/src/24/outline/map-pin.svg"><span>Baltimore, Maryland, United States</span></div></section><section id="profiles"><div class="brand"><img class="icon" alt="github" src="https://cdn.simpleicons.org/github"><a rel="me" href="https://github.com/AndrewGrossman">AndrewGrossman</a></div><div class="brand"><img class="icon" alt="linkedin" src="https://cdn.simpleicons.org/linkedin"><a rel="me" href="https://www.linkedin.com/in/andrew-grossman-13a3bb10/">andrew-grossman-13a3bb10</a></div></section></address></article><article id="work"><h3><img class="icon" alt="" src="https://cdn.statically.io/gh/tailwindlabs/heroicons/master/src/24/outline/building-office-2.svg">Work Experience</h3><section class="work details next-workplace-repeats-true"><div><strong class="workplace"><a href="https://songtrust.com">Songtrust / Downtown Music Publishing</a></strong></div><div><strong>Director of Software Engineering</strong><span class="float"><time datetime="2023-07-01">June 2023</time><time datetime="2024-04-01">March 2024</time></span></div><p class="wrap">Engineering lead for the Songtrust product team. Responsible for the development and maintenance of the Songtrust.com web application with 30k+ active users, as well as internal facing enterprise tools. Managed a team of 6 engineers.</p><ul class="highlights"><li>Guided the technical implementation of key application features, via team planning, ticketing, and code reviews.</li><li>Completed initiative to verify user identities, reactivating stalled business partnership impacting $2M of customer earnings.</li><li>Implemented SLA for incoming support requests, ensuring 95% of requests are responded to within 24 hours. Cleared 9 month request backlog in 3 months.</li><li>Drove completion of over a dozen features that had previously stalled between code deployment and product acceptance QA activities.</li><li>Applied more comprehensive monitoring and alerting, identifying ~75% of user-facing issues before they were reported.</li><li>Assisted in cost-cutting measures, including identifying $35K/year of since-realized savings in cloud costs.</li><li>Ensured high morale and team stability, increasing overall productivity. Onboarded 3 new engineers.</li></ul></section><section class="work details next-workplace-repeats-true"><div></div><div><strong>Engineering Manager</strong><span class="float"><time datetime="2020-01-01">December 2019</time><time datetime="2023-06-30">June 2023</time></span></div><p class="wrap">Team lead / back-end developer for a green-fields application managing music industry intellectual properties for the purpose of royalty collection.</p><ul class="highlights"><li>Architected data model</li><li>Set up a flexible Django/DRF environment with custom primitives for advanced Postgres feature usage</li><li>Designed and implemented a custom ETL pipeline for data ingress from multiple systems</li><li>Maintained application deployment environments (AWS EC2/RDS Postgres/S3)</li><li>Involved in and executed on departmental leadership initiatives focused on reaching an enterprise-level of governance, stability, and process.</li><li>Managed and refined team agile processes and development workflows, including JIRA configurations.</li><li>Responsible for managing 9 subordinates on multiple development teams, including general software development mentoring.</li></ul></section><section class="work details next-workplace-repeats-false"><div></div><div><strong>Senior Software Engineer</strong><span class="float"><time datetime="2018-06-16">June 2018</time><time datetime="2019-12-31">December 2019</time></span></div><p class="wrap">Full-stack developer on a consumer-facing Django/PostgreSQL/Ubuntu/AWS-hosted consumer-facing application for facilitating songwriter royalties collection.</p><ul class="highlights"><li>Implemented a feature to allow users to share songwriters across accounts 3 months ahead of schedule</li><li>Optimized database queries and application performance</li><li>Implemented new front-end features in a legacy jQuery/Backbone environment</li></ul></section><section class="work details next-workplace-repeats-true"><div><strong class="workplace"><a href="https://commercial.bridgestone.com/">Bridgestone Commercial Solutions</a></strong></div><div><strong>Software Lead / Development Manager</strong><span class="float"><span>2012 - 2018</span></span></div><p class="wrap">Led a team of of 8 developers to build a commercial data collection product, that served as a key differentiator in the retread service package offering to hundreds of B2B customers. Product was built using a Django/Dojo/PostgreSQL/RHEL stack. At time of departure, the application had over 600 users and had collected over 3 million survey readings.</p><ul class="highlights"><li>Implemented initial Django/Tastypie/Dojo-based patterns used as the base for the application.</li><li>Scripted imports (ETL) of third-party data from various formats into PostgreSQL database.</li><li>Assigned tasks, provided task documentation, reviewed work, and consulted on work within the engineering team.</li><li>Coordinated development activities with product manager, project manager, QA team, and target users.</li><li>Performed managerial duties, including hiring, termination, and performance reviews.</li><li>Managed developer and testing VM instances (KVM, VMWare)</li></ul></section><section class="work details next-workplace-repeats-false"><div></div><div><strong>Software Developer</strong><span class="float"><span>2003 - 2012</span></span></div><p class="wrap">Developed and administered Django-based commercial website for the tracking of national trucking fleet inventories. Resulting website is now marketed directly to large trucking fleets including Waste Management, Ryder, and UPS, leading to increased sales of the company's core product. Product was built using a Django/YUI 2/PostgreSQL/RHEL stack. Worked on other software products as needed.</p><ul class="highlights"><li>Provided custom reporting and querying of a PostgreSQL database for data mining purposes.</li><li>Implemented features in a C/Curses-based TUI application used for the management of tire retread shops.</li><li>Developed CakePHP-based data reporting website for corporate usage.</li><li>Developed Visual Basic 6 / Access based reporting application for use by over 100 commercial clients.</li></ul></section></article><article id="education"><h3><img class="icon" alt="" src="https://cdn.statically.io/gh/tailwindlabs/heroicons/master/src/24/outline/academic-cap.svg">Education</h3><section class="education details"><div><strong><span>Master of Business Administration</span></strong><span class="float"><span>2014</span><time datetime="2014"></time></span></div><div><strong><a href="https://www.ubalt.edu/">University of Baltimore</a></strong><b class="float"></b></div></section><section class="education details"><div><strong><span>Master of Science in Computer Science</span></strong><span class="float"><span>2007</span><time datetime="2007"></time></span></div><div><strong><a href="https://umbc.edu/">UMBC</a></strong><b class="float"></b></div><div class="courses"><ul><li>Completed research paper in algorithm development including simulation and statistical analysis entitled "Indirect Data Reporting in Wireless Sensor Networks with Multiple Mobile Nodes."</li></ul></div></section><section class="education details"><div><strong><span>Bachelor of Science in Computer Science</span></strong><span class="float"><span>2001</span><time datetime="2001"></time></span></div><div><strong><a href="https://maryland.edu/">University of Maryland, College Park</a></strong><b class="float"></b></div></section></article></main></body></html>
