@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "jsonresume-theme-relaxed": "^0.1.9",
+    "jsonresume-theme-relaxed": "github:AndrewGrossman/jsonresume-theme-relaxed",
     "resume-cli": "^3.0.8"
   }
 }
