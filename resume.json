@@ -55,7 +55,7 @@
       "Designed and implemented a custom ETL pipeline for data ingress from multiple systems",
       "Maintained application deployment environments (AWS EC2/RDS Postgres/S3)",
       "Involved in and executed on departmental leadership initiatives focused on reaching an enterprise-level of governance, stability, and process.",
-      "Managed and refined team agile processes and development workflows.",
+      "Managed and refined team agile processes and development workflows, including JIRA configurations.",
       "Responsible for managing 9 subordinates on multiple development teams, including general software development mentoring."
     ]
   },
@@ -78,16 +78,28 @@
     "url": "https://commercial.bridgestone.com/",
     "startDate": "2012",
     "endDate": "2018",
-    "summary": "Led a team of of 8 developers to build a commercial data collection product, that served as a key differentiator in the retread service package offering to hundreds of B2B customers.",
+    "summary": "Led a team of of 8 developers to build a commercial data collection product, that served as a key differentiator in the retread service package offering to hundreds of B2B customers. Product was built using a Django/Dojo/PostgreSQL/RHEL stack. At time of departure, the application had over 600 users and had collected over 3 million survey readings.",
     "highlights": [
-      "Primary application was built using a Django/Dojo/PostgreSQL/RHEL stack.",
-      "At time of departure, the application had over 600 users and had collected over 3 million survey readings.",
       "Implemented initial Django/Tastypie/Dojo-based patterns used as the base for the application.",
       "Scripted imports (ETL) of third-party data from various formats into PostgreSQL database.",
       "Assigned tasks, provided task documentation, reviewed work, and consulted on work within the engineering team.",
       "Coordinated development activities with product manager, project manager, QA team, and target users.",
       "Performed managerial duties, including hiring, termination, and performance reviews.",
-      "Managed developer and testing VM instances (KVM, VMWare)",
+      "Managed developer and testing VM instances (KVM, VMWare)"
+    ]
+  },
+  {
+    "name": "Bridgestone Commercial Solutions",
+    "position": "Software Developer",
+    "url": "https://commercial.bridgestone.com/",
+    "startDate": "2003",
+    "endDate": "2012",
+    "summary": "Developed and administered Django-based commercial website for the tracking of national trucking fleet inventories. Resulting website is now marketed directly to large trucking fleets including Waste Management, Ryder, and UPS, leading to increased sales of the company's core product. Product was built using a Django/YUI 2/PostgreSQL/RHEL stack. Worked on other software products as needed.",
+    "highlights": [
+      "Provided custom reporting and querying of a PostgreSQL database for data mining purposes.",
+      "Implemented features in a C/Curses-based TUI application used for the management of tire retread shops.",
+      "Developed CakePHP-based data reporting website for corporate usage.",
+      "Developed Visual Basic 6 / Access based reporting application for use by over 100 commercial clients."
     ]
   }
   ],
