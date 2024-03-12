@@ -126,16 +126,5 @@
       "commentedstudyType": "Bachelor of Science",
       "endDate": "2001"
     }
-  ],
-  "skills": [
-    {
-      "name": "Web Development",
-      "level": "Master",
-      "keywords": [
-        "HTML",
-        "CSS",
-        "JavaScript"
-      ]
-    }
   ]
 }
