@@ -52,9 +52,10 @@
     "highlights": [
       "Architected data model.",
       "Set up a flexible Django/DRF environment with custom primitives for advanced Postgres feature usage.",
-      "Designed and implemented a custom ETL pipeline for data ingress from multiple systems.",
+      "Designed and implemented a custom ETL pipeline using Python and SQL for data ingress from multiple systems.",
       "Maintained application deployment environments (AWS EC2/RDS Postgres/S3).",
       "Involved in and executed on departmental leadership initiatives focused on reaching an enterprise-level of governance, stability, and process.",
+      "Drove approach to reduce data record rejections from business partners by 95% versus the previous system.",
       "Managed and refined team agile processes and development workflows, including JIRA configurations.",
       "Responsible for managing 9 subordinates on multiple development teams, including general software development mentoring."
     ]
