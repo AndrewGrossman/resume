@@ -50,10 +50,10 @@
     "endDate": "2023-06-30",
     "summary": "Team lead / back-end developer for a green-fields application managing music industry intellectual properties for the purpose of royalty collection.",
     "highlights": [
-      "Architected data model",
-      "Set up a flexible Django/DRF environment with custom primitives for advanced Postgres feature usage",
-      "Designed and implemented a custom ETL pipeline for data ingress from multiple systems",
-      "Maintained application deployment environments (AWS EC2/RDS Postgres/S3)",
+      "Architected data model.",
+      "Set up a flexible Django/DRF environment with custom primitives for advanced Postgres feature usage.",
+      "Designed and implemented a custom ETL pipeline for data ingress from multiple systems.",
+      "Maintained application deployment environments (AWS EC2/RDS Postgres/S3).",
       "Involved in and executed on departmental leadership initiatives focused on reaching an enterprise-level of governance, stability, and process.",
       "Managed and refined team agile processes and development workflows, including JIRA configurations.",
       "Responsible for managing 9 subordinates on multiple development teams, including general software development mentoring."
@@ -67,9 +67,9 @@
     "endDate": "2019-12-31",
     "summary": "Full-stack developer on a consumer-facing Django/PostgreSQL/Ubuntu/AWS-hosted consumer-facing application for facilitating songwriter royalties collection.",
     "highlights": [
-      "Implemented a feature to allow users to share songwriters across accounts 3 months ahead of schedule",
-      "Optimized database queries and application performance",
-      "Implemented new front-end features in a legacy jQuery/Backbone environment"
+      "Implemented a feature to allow users to share songwriters across accounts 3 months ahead of schedule.",
+      "Optimized database queries and application performance.",
+      "Implemented new front-end features in a legacy jQuery/Backbone environment."
     ]
   },
   {
@@ -85,7 +85,7 @@
       "Assigned tasks, provided task documentation, reviewed work, and consulted on work within the engineering team.",
       "Coordinated development activities with product manager, project manager, QA team, and target users.",
       "Performed managerial duties, including hiring, termination, and performance reviews.",
-      "Managed developer and testing VM instances (KVM, VMWare)"
+      "Managed developer and testing VM instances (KVM, VMWare)."
     ]
   },
   {
