@@ -134,5 +134,70 @@
       "commentedstudyType": "Bachelor of Science",
       "endDate": "2001"
     }
+  ],
+  "skills": [
+    {
+      "name": "Python",
+      "level": "Senior",
+      "keywords": [
+        "Django",
+        "Django Rest Framework",
+        "REST API",
+        "SQLAlchemy",
+        "Celery"
+      ]
+    },
+    {
+      "name": "PostgreSQL",
+      "level": "Senior",
+      "keywords": [
+        "SQL",
+        "pl/pgsql",
+        "Query Optimization",
+        "ETL",
+        "RDS",
+        "Data Modeling"
+      ]
+    },
+    {
+      "name": "AWS",
+      "level": "Advanced",
+      "keywords": [
+        "RDS",
+        "EC2",
+        "S3",
+        "Lambda"
+      ]
+    },
+    {
+      "name": "Software Development",
+      "level": "Senior",
+      "keywords": [
+        "JIRA",
+        "Confluence",
+        "CircleCI",
+        "Git",
+        "GitHub"
+      ]
+    },
+    {
+      "name": "Engineering Management",
+      "level": "Advanced",
+      "keywords": [
+        "People Management",
+        "People Development",
+        "Agile"
+      ]
+    },
+    {
+      "name": "Technical Potpourri",
+      "level": "Intermediate",
+      "keywords": [
+        "Excel",
+        "Visual Basic / VBA",
+        "Bash",
+        "Linux"
+      ]
+    }
   ]
 }
