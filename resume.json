@@ -142,7 +142,6 @@
       "keywords": [
         "Django",
         "Django Rest Framework",
-        "REST API",
         "SQLAlchemy",
         "Celery"
       ]
@@ -174,11 +173,12 @@
       "level": "Senior",
       "keywords": [
         "JIRA",
-        "Confluence",
         "CircleCI",
         "Git",
         "GitHub",
-        "Datadog"
+        "Datadog",
+        "REST API",
+        "Confluence"
       ]
     },
     {
