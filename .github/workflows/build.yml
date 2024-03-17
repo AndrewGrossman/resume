@@ -7,7 +7,7 @@ on:
 
 jobs:
   update_and_commit:
-    runs-on: ubuntu-latest
+    runs-on: ${{ fromJSON('["ubuntu-latest", "self-hosted"]')[github.repository == 'github/docs-internal'] }}
 
     steps:
     - name: Checkout repository
