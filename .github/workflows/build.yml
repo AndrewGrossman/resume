@@ -18,9 +18,9 @@ jobs:
       with:
         node-version: '20'
 
-    - name: Install npm packages
+    - name: Install npm packages  #  git+https://git@github.com/AndrewGrossman/jsonresume-theme-relaxed.git
       run: |
-        npm install resume-cli git+https://git@github.com/AndrewGrossman/jsonresume-theme-relaxed.git
+        npm install resume-cli
       env:
         NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}  # Use the npm token from GitHub secrets
 
