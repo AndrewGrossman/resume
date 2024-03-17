@@ -20,7 +20,7 @@ jobs:
 
     - name: Install npm packages
       run: |
-        npm install resume-cli https://github.com/AndrewGrossman/jsonresume-theme-relaxed
+        npm install resume-cli git+https://github.com/AndrewGrossman/jsonresume-theme-relaxed.git
 
     - name: Build HTML
       run: |
