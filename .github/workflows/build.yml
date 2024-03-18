@@ -1,6 +1,7 @@
 name: Rebuild HTML and PDFs on resume.json update
 
 on:
+  workflow_dispatch:
   push:
     paths:
       - 'resume.json' # Trigger only when resume.json is updated
