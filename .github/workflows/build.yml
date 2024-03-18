@@ -23,7 +23,7 @@ jobs:
         rm -rf package.json package-lock.json
         npm install resume-cli git+https://git@github.com/AndrewGrossman/jsonresume-theme-relaxed.git
       env:
-        NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}  # Use the npm token from GitHub secrets
+        NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
 
     - name: Build HTML
       run: |
@@ -40,4 +40,4 @@ jobs:
         git add "Andrew Grossman - Resume.pdf" "Andrew Grossman - Resume.html"
         git diff --quiet && git diff --staged --quiet || git commit -m "Update resume.html and resume.pdf" && git push
       env:
-        GITHUB_TOKEN: ${{ github.token }}  # Use the GITHUB_TOKEN from GitHub secrets
+        GITHUB_TOKEN: ${{ github.token }}
