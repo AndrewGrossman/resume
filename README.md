@@ -1,6 +1,6 @@
 # resume
 
-This is my resume in json-resume format.
+This is my resume in [json-resume](https://github.com/jsonresume/resume-schema) format.
 
 The HTML and PDF versions will rebuild automatically on updates to `resume.json`.
 
