@@ -2,6 +2,10 @@
 
 This is my resume in json-resume format.
 
+The HTML and PDF versions will rebuild automatically on updates to `resume.json`.
+
+## Building in a local environment
+
 To build:
 
 Install resume-cli from node.
