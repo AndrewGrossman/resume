@@ -46,7 +46,7 @@
     "url": "https://songtrust.com",
     "startDate": "2020-01-01",
     "endDate": "2023-06-30",
-    "summary": "Team lead / back-end developer for a green-fields application managing music industry intellectual properties for the purpose of royalty collection.",
+    "summary": "Team lead / back-end developer for a greenfield application managing music industry intellectual properties for the purpose of royalty collection.",
     "highlights": [
       "Architected data model.",
       "Set up a flexible Django/DRF environment with custom primitives for advanced Postgres feature usage.",
@@ -55,7 +55,7 @@
       "Involved in and executed on departmental leadership initiatives focused on reaching an enterprise-level of governance, stability, and process.",
       "Drove approach to reduce data record rejections from business partners by 95% versus the previous system.",
       "Managed and refined team agile processes and development workflows, including JIRA configurations.",
-      "Responsible for managing 9 subordinates on multiple development teams, including general software development mentoring."
+      "Responsible for managing 9 engineers on multiple development teams, including general software development mentoring."
     ]
   },
   {
