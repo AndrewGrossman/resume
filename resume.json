@@ -102,11 +102,12 @@
     ]
   },
     {
-      "name": "Service for Stifel Nicolaus",
-      "position": "Software Consultant",
+      "name": "Stifel Nicolaus",
+      "position": "Outside Software Consultant",
       "startDate": "2007",
       "endDate": "2018",
-      "summary": "Developed advanced Microsoft Excel applications w/VBA for stock selection and tracking."
+      "summary": "Developed advanced Microsoft Excel applications w/VBA for stock selection and tracking.",
+      "url": "https://www.stifel.com/"
     }
   ],
   "education": [
