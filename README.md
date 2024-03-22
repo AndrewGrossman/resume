@@ -4,7 +4,7 @@ This is my resume in [json-resume](https://github.com/jsonresume/resume-schema) 
 
 The HTML and PDF versions will rebuild automatically on updates to `resume.json`.
 
-This uses the [forked version of the relaxed theme](https://github.com/AndrewGrossman/jsonresume-theme-relaxed) updated for my use case.
+This uses a [forked version of the relaxed theme](https://github.com/AndrewGrossman/jsonresume-theme-relaxed).
 
 ## Building in a local environment
 
