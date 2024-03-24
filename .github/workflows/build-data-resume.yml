@@ -28,11 +28,11 @@ jobs:
 
     - name: Build HTML
       run: |
-        node_modules/resume-cli/build/main.js export "Andrew Grossman - Data - Resume.html" --theme jsonresume-theme-relaxed
+        node_modules/resume-cli/build/main.js export "Andrew Grossman - Data - Resume.html" --resume resume-data-ic-focus.json --theme jsonresume-theme-relaxed
 
     - name: Build PDF
       run: |
-        node_modules/resume-cli/build/main.js export "Andrew Grossman - Data - Resume.pdf" --theme jsonresume-theme-relaxed
+        node_modules/resume-cli/build/main.js export "Andrew Grossman - Data - Resume.pdf" --resume resume-data-ic-focus.json --theme jsonresume-theme-relaxed
 
     - name: Commit changes
       run: |
