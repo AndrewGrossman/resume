@@ -1,0 +1,44 @@
+name: Rebuild HTML and PDFs on resume-django-ic-focus.json update
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'resume-django-ic-focus.json' # Trigger only when target resume is updated
+
+jobs:
+  update_and_commit:
+    runs-on: ${{ fromJSON('["ubuntu-latest", "self-hosted"]')[github.repository == 'github/docs-internal'] }}
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20'
+
+    - name: Install npm packages
+      run: |
+        rm -rf package.json package-lock.json
+        npm install resume-cli git+https://git@github.com/AndrewGrossman/jsonresume-theme-relaxed.git
+      env:
+        NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
+
+    - name: Build HTML
+      run: |
+        node_modules/resume-cli/build/main.js export "Andrew Grossman - Django - Resume.html" --resume resume-django-ic-focus.json --theme jsonresume-theme-relaxed
+
+    - name: Build PDF
+      run: |
+        node_modules/resume-cli/build/main.js export "Andrew Grossman - Django - Resume.pdf" --resume resume-django-ic-focus.json --theme jsonresume-theme-relaxed
+
+    - name: Commit changes
+      run: |
+        git config --global user.email "actions@github.com"
+        git config --global user.name "GitHub Actions"
+        git add "Andrew Grossman - Django - Resume.pdf" "Andrew Grossman - Django - Resume.html"
+        git diff --quiet && git diff --staged --quiet || git commit -m "Update django-ic resume.html and resume.pdf" && git stash && git pull --rebase -X theirs && git push && git stash pop
+      env:
+        GITHUB_TOKEN: ${{ github.token }}
