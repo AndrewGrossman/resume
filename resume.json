@@ -34,9 +34,10 @@
       "Guided the technical implementation of key application features, via team planning, ticketing, and code reviews.",
       "Completed initiative to verify user identities, reactivating stalled business partnership impacting $2M of customer earnings.",
       "Implemented SLA for incoming support requests, ensuring 95% of requests are responded to within 24 hours. Cleared 9 month request backlog in 3 months.",
-      "Drove completion of over a dozen features that had previously stalled between code deployment and product acceptance QA activities.",
+      "Drove completion of a dozen features previously stalled between code deployment and product acceptance QA activities.",
       "Applied more comprehensive monitoring and alerting, identifying ~75% of user-facing issues before they were reported.",
       "Assisted in cost-cutting measures, including identifying $35K/year of since-realized savings in cloud costs.",
+      "Functioned as departmental service owner for Postgres. Managed AWS RDS Postgres instances, including right-sizing, cost management, major version upgrades, and parameter configuration. Mentored new departmental DBA.",
       "Ensured high morale and team stability, increasing overall productivity. Onboarded 3 new engineers."
     ]
   },
@@ -50,7 +51,7 @@
     "highlights": [
       "Architected data model.",
       "Set up a flexible Django/DRF environment with custom primitives for advanced Postgres feature usage.",
-      "Designed and implemented a custom ETL pipeline using Python and SQL for data ingress from multiple systems.",
+      "Designed and implemented a custom ETL pipeline using Python and SQL for data ingress from multiple systems, including MS SQL Server sourced data.",
       "Maintained application deployment environments (AWS EC2/RDS Postgres/S3).",
       "Involved in and executed on departmental leadership initiatives focused on reaching an enterprise-level of governance, stability, and process.",
       "Drove approach to reduce data record rejections from business partners by 95% versus the previous system.",
@@ -93,7 +94,7 @@
     "url": "https://commercial.bridgestone.com/",
     "startDate": "2003",
     "endDate": "2012",
-    "summary": "Developed and administered Django-based commercial website for the tracking of national trucking fleet inventories. Resulting website is now marketed directly to large trucking fleets including Waste Management, Ryder, and UPS, leading to increased sales of the company's core product. Product was built using a Django/YUI 2/PostgreSQL/RHEL stack. Worked on other software products as needed.",
+    "summary": "Developed and administered Django-based commercial website for the tracking of national trucking fleet inventories. Resulting website is now marketed directly to large trucking fleets including Waste Management, Ryder, and UPS, leading to increased sales of the company's core product. Product was built using a Django/YUI 2/PostgreSQL/RHEL stack. System consolidated data from over 30 Postgres-based systems into a single reporting database. Worked on other software products as needed.",
     "highlights": [
       "Provided custom reporting and querying of a PostgreSQL database for data mining purposes.",
       "Implemented features in a C/Curses-based TUI application used for the management of tire retread shops.",
