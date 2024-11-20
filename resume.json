@@ -15,12 +15,12 @@
     "profiles": [{
         "url": "https://github.com/AndrewGrossman",
         "username": "AndrewGrossman",
-        "network": "github"
+        "network": "GitHub"
       },
       {
         "url": "https://www.linkedin.com/in/andrew-grossman-13a3bb10/",
         "username": "andrew-grossman-13a3bb10",
-        "network": "linkedin"
+        "network": "LinkedIn"
       }]
   },
   "work": [
