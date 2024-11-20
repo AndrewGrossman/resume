@@ -23,7 +23,22 @@
         "network": "linkedin"
       }]
   },
-  "work": [{
+  "work": [
+    {
+      "name": "Cabinet Health",
+      "position": "Staff Backend Engineer",
+      "url": "https://cabinethealth.com",
+      "startDate": "2024-05-20",
+      "endDate": "2025-01-03",
+      "summary": "Backend engineer for Cabinet's online pharmacy offering. Implemented features supporting the customer account portal, internal business management systems, and integrations with pharmacy partners.",
+      "highlights": [
+      "Cleaned and optimized third-party medical provider data. Developed efficient API endpoints capable of handling 10 million provider records with limited infrastructure resources.",
+      "Led efforts to clear a backlog of over 50 outstanding customer issues, helping the company to align and protect its brand.",
+      "Implemented an automated notification system within Django to send timely SMS and email alerts, increasing refill rates and reducing pharmacy staff manual work.",
+      "Implemented business reporting for senior leadership using Metabase."
+      ]
+    },
+    {
     "name": "Songtrust / Downtown Music Publishing",
     "position": "Director of Software Engineering",
     "url": "https://songtrust.com",
