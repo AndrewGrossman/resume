@@ -51,5 +51,12 @@ django_pdf:
 django_html:
 	node_modules/.bin/resume export $(DJANGO_HTML_OUTPUT) --resume $(DJANGO_SOURCE).json --theme jsonresume-theme-relaxed
 
+# Command to format all JSON files
+clean:
+	jq . resume.json > tmp.json && mv tmp.json resume.json
+	jq . resume-python-focus.json > tmp.json && mv tmp.json resume-python-focus.json
+	jq . resume-data-ic-focus.json > tmp.json && mv tmp.json resume-data-ic-focus.json
+	jq . resume-django-ic-focus.json > tmp.json && mv tmp.json resume-django-ic-focus.json
+
 # Build all resumes (PDF and HTML for general, Python, Data, and Django)
 all: pdf html python_pdf python_html data_pdf data_html django_pdf django_html

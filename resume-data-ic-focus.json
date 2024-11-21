@@ -117,7 +117,9 @@
       "Developed CakePHP-based data reporting website for corporate usage.",
       "Developed Visual Basic 6 / Access based reporting application for use by over 100 commercial clients."
     ]
-  },
+  }
+  ],
+  "removed_work_for_space": [
     {
       "name": "Stifel Nicolaus",
       "position": "Outside Software Consultant",
