@@ -63,7 +63,7 @@ def generate_resume(base_resume, resume_key):
 def main():
     base_resume_path = 'base-resume.json'
     output_dir = 'generated_resume_jsons'
-    resume_keys = ['Main', 'Data', 'Django', 'Python', 'Pharmacy', ]
+    resume_keys = ['Main', 'Data', 'Django', 'Python', 'Pharmacy', "Verbose"]
 
     base_resume = load_json(base_resume_path)
 

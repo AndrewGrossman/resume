@@ -50,11 +50,13 @@
             "summary": "Engineering lead for the Songtrust product team. Responsible for the development and maintenance of the Songtrust.com web application with 30k+ active users, as well as internal facing enterprise tools. Managed a team of 6 engineers.",
             "highlights": [
                 "Guided the technical implementation of key application features, via team planning, ticketing, and code reviews.",
+                "Identified $35K/year of since-realized savings in cloud costs.",
                 "Functioned as departmental service owner for Postgres. Managed AWS RDS Postgres instances, including right-sizing, cost management, major version upgrades, and parameter configuration. Mentored new departmental DBA.",
                 "Completed initiative to verify user identities, reactivating stalled business partnership impacting $2M of client earnings.",
                 "Implemented SLA for incoming support requests, ensuring 95% of requests are responded to within 24 hours. Cleared 9 month request backlog in 3 months.",
                 "Drove completion of a dozen features previously stalled between code deployment and product acceptance QA activities.",
-                "Applied more comprehensive monitoring and alerting, identifying ~75% of user-facing issues before they were reported."
+                "Applied more comprehensive monitoring and alerting, identifying ~75% of user-facing issues before they were reported.",
+                "Ensured high morale and team stability, increasing overall productivity. Onboarded 3 new engineers."
             ]
         },
         {
@@ -80,7 +82,7 @@
             "url": "https://songtrust.com",
             "startDate": "2018-06-16",
             "endDate": "2019-12-31",
-            "summary": "Full-stack developer on a consumer-facing PostgreSQL/Python/Django/Ubuntu/AWS-hosted consumer-facing application for facilitating songwriter royalties collection.",
+            "summary": "Full-stack developer on a consumer-facing Django/PostgreSQL/Ubuntu/AWS-hosted consumer-facing application for facilitating songwriter royalties collection.",
             "highlights": [
                 "Implemented a feature to allow users to share songwriters across accounts 3 months ahead of schedule.",
                 "Optimized database queries and application performance.",
@@ -107,10 +109,10 @@
             "endDate": "2018",
             "summary": "Led a team of of 8 developers to build a commercial data collection product, that served as a key differentiator in the retread service package offering to hundreds of B2B customers. Product was built using a Django/Dojo/PostgreSQL/RHEL stack. At time of departure, the application had over 600 users and had collected over 3 million survey readings.",
             "highlights": [
-                "Implemented data model providing for auditability and multi-faceted authorization controls.",
                 "Architected and implemented application foundation using Django/Tastypie/Dojo frameworks.",
                 "Engineered third-party data imports (ETL) from various formats into PostgreSQL database.",
-                "Led end-to-end team management including task assignment, documentation, code reviews, cross-functional coordination with PM/QA teams, and personnel responsibilities including hiring and performance reviews."
+                "Led end-to-end team management including task assignment, documentation, code reviews, cross-functional coordination with PM/QA teams, and personnel responsibilities including hiring and performance reviews.",
+                "Managed developer and testing VM instances (KVM, VMWare)."
             ]
         },
         {
@@ -119,8 +121,13 @@
             "url": "https://commercial.bridgestone.com/",
             "startDate": "2003",
             "endDate": "2012",
-            "summary": "Developed and administered Django-based commercial website for the tracking of national trucking fleet inventories. System consolidated data from over 30 Postgres-based systems into a single reporting database. Resulting website is now marketed directly to large trucking fleets including Waste Management, Ryder, and UPS, leading to increased sales of the company's core product. Product was built using a Django/YUI 2/PostgreSQL/RHEL stack. Worked on other software products as needed.",
-            "highlights": []
+            "summary": "Developed and administered Django-based commercial website for the tracking of national trucking fleet inventories. Resulting website is now marketed directly to large trucking fleets including Waste Management, Ryder, and UPS, leading to increased sales of the company's core product. Product was built using a Django/YUI 2/PostgreSQL/RHEL stack. System consolidated data from over 30 Postgres-based systems into a single reporting database. Worked on other software products as needed.",
+            "highlights": [
+                "Provided custom reporting and querying of a PostgreSQL database for data mining purposes.",
+                "Implemented features in a C/Curses-based/Informix CISAM TUI application used for the management of tire retread shops.",
+                "Developed CakePHP-based data reporting website for corporate usage.",
+                "Developed Visual Basic 6 / Access based reporting application for use by over 100 commercial clients."
+            ]
         }
     ],
     "prunedWork": [
@@ -216,7 +223,6 @@
             "name": "Technical Potpourri",
             "level": "Intermediate",
             "keywords": [
-                "Microsoft SQL Server",
                 "Linux",
                 "Docker",
                 "Javascript",

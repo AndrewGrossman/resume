@@ -21,6 +21,14 @@ clean:
 	rm -rf $(OUTPUT_DIR)/*
 	rm -rf $(GENERATED_JSON_DIR)/*
 
+main: generate_tailored_jsons
+	mkdir -p $(OUTPUT_DIR)
+	for file in $$(ls $(GENERATED_JSON_DIR)/Main.json); do \
+		name=$$(basename $$file .json); \
+		node_modules/.bin/resume export "$(OUTPUT_DIR)/Andrew Grossman - $$name - Resume.pdf" --resume $$file --theme jsonresume-theme-relaxed; \
+		node_modules/.bin/resume export "$(OUTPUT_DIR)/Andrew Grossman - $$name - Resume.html" --resume $$file --theme jsonresume-theme-relaxed; \
+	done
+
 # Build all resumes (PDF and HTML for general, Python, Data, and Django)
 all: generate_tailored_jsons generate_final_forms
 

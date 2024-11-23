@@ -36,7 +36,7 @@
             "endDateNotCurrent": "2025-01-03",
             "summary": "Backend engineer for Cabinet's online pharmacy offering. Implemented software features in a Python/Django-based system supporting the customer account portal, internal business management systems, and integrations with pharmacy partners.",
             "highlights": [
-                "Designed and optimized API endpoints to handle 10M+ provider and pharmacy records for prescription acquisition, reducing refill response times by 30%.",
+                "Designed and optimized API endpoints to handle 10M+ provider and pharmacy records for prescription acquisition, reducing refill response times by 30%. Cleaned underlying third-party data using Polars.",
                 "Collaborated with cross-functional teams to design and launch new acquisition and fulfillment features, increasing order processing speed by 10%.",
                 "Implemented an automated notification system to send timely SMS and email alerts, increasing refill rates by 20% and optimizing operational workload by 15%.",
                 "Designed backend architecture to integrate pharmacy partner data for Cabinet’s network of partners, ensuring seamless prescription management for patients.",
@@ -52,13 +52,12 @@
             "summary": "Engineering lead for the Songtrust product team. Responsible for the development and maintenance of the Songtrust.com web application with 30k+ active users, as well as internal facing enterprise tools. Managed a team of 6 engineers.",
             "highlights": [
                 "Guided the technical implementation of key application features, via team planning, ticketing, and code reviews.",
-                "Completed initiative to verify user identities, reactivating stalled business partnership impacting $2M of customer earnings.",
+                "Identified $35K/year of since-realized savings in cloud costs.",
+                "Functioned as departmental service owner for Postgres. Managed AWS RDS Postgres instances, including right-sizing, cost management, major version upgrades, and parameter configuration. Mentored new departmental DBA.",
+                "Completed initiative to verify user identities, reactivating stalled business partnership impacting $2M of client earnings.",
                 "Implemented SLA for incoming support requests, ensuring 95% of requests are responded to within 24 hours. Cleared 9 month request backlog in 3 months.",
                 "Drove completion of a dozen features previously stalled between code deployment and product acceptance QA activities.",
-                "Applied more comprehensive monitoring and alerting, identifying ~75% of user-facing issues before they were reported.",
-                "Assisted in cost-cutting measures, including identifying $35K/year of since-realized savings in cloud costs.",
-                "Functioned as departmental service owner for Postgres. Managed AWS RDS Postgres instances, including right-sizing, cost management, major version upgrades, and parameter configuration. Mentored new departmental DBA.",
-                "Ensured high morale and team stability, increasing overall productivity. Onboarded 3 new engineers."
+                "Applied more comprehensive monitoring and alerting, identifying ~75% of user-facing issues before they were reported."
             ]
         },
         {
@@ -67,7 +66,7 @@
             "url": "https://songtrust.com",
             "startDate": "2020-01-01",
             "endDate": "2023-06-30",
-            "summary": "Team lead / back-end developer for a greenfield application managing music industry intellectual properties for the purpose of royalty collection.",
+            "summary": "Team lead / back-end developer for a greenfield application managing music industry intellectual properties for the purpose of royalty collection.  Managed and mentored 9 engineers across multiple development teams.",
             "highlights": [
                 "Architected data model, including support for robust auditability.",
                 "Set up a flexible Django/DRF environment with custom primitives for advanced Postgres feature usage.",
@@ -75,8 +74,7 @@
                 "Maintained application deployment environments (AWS EC2/RDS Postgres/S3).",
                 "Involved in and executed on departmental leadership initiatives focused on reaching an enterprise-level of governance, stability, and process.",
                 "Drove approach to reduce data record rejections from business partners by 95% versus the previous system.",
-                "Managed and refined team agile processes and development workflows, including JIRA configurations.",
-                "Responsible for managing and mentoring 9 engineers on multiple development teams."
+                "Managed and refined team agile processes and development workflows, including JIRA configurations."
             ]
         },
         {
@@ -93,6 +91,18 @@
             ]
         },
         {
+            "name": "Notes Frequencies, Inc.",
+            "position": "Engineering Consultant",
+            "url": "https://notes.fm",
+            "startDate": "2024-05-06",
+            "summary": "Backend architect for Notes' financial management platform for musicians. Automated and exposed data retrieval activities to service Notes' client-facing app and internal tooling.",
+            "highlights": [
+                "Architected greenfield application based on Django/Django-Ninja/PostgreSQL/Celery/Docker/AWS.",
+                "Automated processing and loading of financial statements using Pandas.",
+                "Automated account registration and website/API data retrieval activities using Python and Selenium."
+            ]
+        },
+        {
             "name": "Bridgestone Commercial Solutions",
             "position": "Software Lead / Development Manager",
             "url": "https://commercial.bridgestone.com/",
@@ -100,12 +110,9 @@
             "endDate": "2018",
             "summary": "Led a team of of 8 developers to build a commercial data collection product, that served as a key differentiator in the retread service package offering to hundreds of B2B customers. Product was built using a Django/Dojo/PostgreSQL/RHEL stack. At time of departure, the application had over 600 users and had collected over 3 million survey readings.",
             "highlights": [
-                "Implemented initial Django/Tastypie/Dojo-based patterns used as the base for the application.",
-                "Scripted imports (ETL) of third-party data from various formats into PostgreSQL database.",
-                "Assigned tasks, provided task documentation, reviewed work, and consulted on work within the engineering team.",
-                "Coordinated development activities with product manager, project manager, QA team, and target users.",
-                "Performed managerial duties, including hiring, termination, and performance reviews.",
-                "Managed developer and testing VM instances (KVM, VMWare)."
+                "Architected and implemented application foundation using Django/Tastypie/Dojo frameworks.",
+                "Engineered third-party data imports (ETL) from various formats into PostgreSQL database.",
+                "Led end-to-end team management including task assignment, documentation, code reviews, cross-functional coordination with PM/QA teams, and personnel responsibilities including hiring and performance reviews."
             ]
         },
         {
@@ -115,13 +122,10 @@
             "startDate": "2003",
             "endDate": "2012",
             "summary": "Developed and administered Django-based commercial website for the tracking of national trucking fleet inventories. Resulting website is now marketed directly to large trucking fleets including Waste Management, Ryder, and UPS, leading to increased sales of the company's core product. Product was built using a Django/YUI 2/PostgreSQL/RHEL stack. System consolidated data from over 30 Postgres-based systems into a single reporting database. Worked on other software products as needed.",
-            "highlights": [
-                "Provided custom reporting and querying of a PostgreSQL database for data mining purposes.",
-                "Implemented features in a C/Curses-based TUI application used for the management of tire retread shops.",
-                "Developed CakePHP-based data reporting website for corporate usage.",
-                "Developed Visual Basic 6 / Access based reporting application for use by over 100 commercial clients."
-            ]
-        },
+            "highlights": []
+        }
+    ],
+    "prunedWork": [
         {
             "name": "Stifel Nicolaus",
             "position": "Outside Software Consultant",
@@ -214,11 +218,12 @@
             "name": "Technical Potpourri",
             "level": "Intermediate",
             "keywords": [
+                "Linux",
+                "Docker",
+                "Javascript",
                 "Excel",
                 "Visual Basic / VBA",
-                "Bash",
-                "Linux",
-                "Javascript"
+                "Bash"
             ]
         }
     ]
