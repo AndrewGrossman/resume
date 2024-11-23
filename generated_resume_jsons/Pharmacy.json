@@ -8,7 +8,7 @@
         "NoResumesInUSimage": "https://avatars.githubusercontent.com/u/1409332?v=4",
         "email": "andrewgrossman.developer@gmail.com",
         "phone": "(410) 645-0462",
-        "summary": "Seasoned developer and engineering lead with 15+ years of experience, including a background in commercial data collection and processing. I have a strong background in PostgreSQL, Python, and Django, with experience in AWS, ETL, optimization, and software development management.",
+        "summary": "Seasoned developer and engineering lead with 15+ years of experience, including a background in commercial data collection and processing. Strong background in PostgreSQL, Python, and Django, with experience in AWS, ETL, optimization, and software development management.",
         "location": {
             "city": "Baltimore",
             "countryCode": "US",
@@ -21,8 +21,8 @@
                 "network": "github"
             },
             {
-                "url": "https://www.linkedin.com/in/andrew-grossman-13a3bb10/",
-                "username": "andrew-grossman-13a3bb10",
+                "url": "https://www.linkedin.com/in/andrew-g-grossman/",
+                "username": "andrew-g-grossman",
                 "network": "linkedin"
             }
         ]
@@ -33,13 +33,14 @@
             "position": "Staff Backend Engineer",
             "url": "https://cabinethealth.com",
             "startDate": "2024-05-20",
-            "endDate": "2025-01-03",
+            "endDateNotCurrent": "2025-01-03",
             "summary": "Backend engineer for Cabinet's online pharmacy offering. Implemented software features in a Python/Django-based system supporting the customer account portal, internal business management systems, and integrations with pharmacy partners.",
             "highlights": [
-                "Cleaned and optimized third-party medical provider data. Developed efficient API endpoints capable of handling 10 million provider records with limited infrastructure resources.",
-                "Led efforts to clear a backlog of over 50 outstanding customer issues, helping the company to align and protect its brand.",
-                "Implemented an automated notification system within Django to send timely SMS and email alerts, increasing refill rates and reducing pharmacy staff manual work.",
-                "Implemented business reporting for senior leadership using Metabase."
+                "Designed and optimized API endpoints to handle 10M+ provider and pharmacy records for prescription acquisition, reducing refill response times by 30%.",
+                "Collaborated with cross-functional teams to design and launch new acquisition and fulfillment features, increasing order processing speed by 10%.",
+                "Implemented an automated notification system to send timely SMS and email alerts, increasing refill rates by 20% and optimizing operational workload by 15%.",
+                "Designed backend architecture to integrate pharmacy partner data for Cabinet’s network of partners, ensuring seamless prescription management for patients.",
+                "Spearheaded data analytics in BI tooling (Metabase), delivering actionable insights to senior leadership for strategic decision-making."
             ]
         },
         {
