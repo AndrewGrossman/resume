@@ -3,6 +3,10 @@ import json
 import os
 
 FIELDS_TO_PROCESS = {
+    'basics': {
+        'email': 'email',
+        'phone': 'phone',
+    },
     'work': {
         'summary': 'summary',
         'highlights': 'highlights'
@@ -63,7 +67,7 @@ def generate_resume(base_resume, resume_key):
 def main():
     base_resume_path = 'base-resume.json'
     output_dir = 'generated_resume_jsons'
-    resume_keys = ['Main', 'Data', 'Django', 'Python', 'Pharmacy', "Verbose"]
+    resume_keys = ['Main', 'Data', 'Django', 'Python', 'Pharmacy', "Verbose", "NoContact"]
 
     base_resume = load_json(base_resume_path)
 

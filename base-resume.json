@@ -6,8 +6,14 @@
     "name": "Andrew G. Grossman, MSc, MBA",
     "label": "",
     "NoResumesInUSimage": "https://avatars.githubusercontent.com/u/1409332?v=4",
-    "email": "andrewgrossman.developer@gmail.com",
-    "phone": "(410) 645-0462",
+    "email": {
+      "default": "andrewgrossman.developer@gmail.com",
+      "NoContact": ""
+    },
+    "phone": {
+      "default": "(410) 645-0462",
+      "NoContact": ""
+    },
     "summary": "Seasoned developer and engineering lead with 15+ years of experience, including a background in commercial data collection and processing. Strong background in PostgreSQL, Python, and Django, with experience in AWS, ETL, optimization, and software development management.",
     "location": {
       "city": "Baltimore",
