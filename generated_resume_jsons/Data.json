@@ -78,10 +78,10 @@
             "endDate": "2023-06-30",
             "summary": "Joined as Senior Software Engineer; promoted to Engineering Manager in 2020. Led a greenfield Django/DRF/PostgreSQL application managing music industry intellectual properties for royalty collection. Managed and mentored 9 engineers across multiple development teams.",
             "highlights": [
-                "Architected data model, including support for robust auditability.",
+                "Drove approach to reduce data record rejections from business partners by 95% versus the previous system.",
                 "Designed and implemented a custom ETL pipeline using Python and SQL for data ingress from multiple systems, including MS SQL Server sourced data.",
-                "Maintained application deployment environments (AWS EC2/RDS Postgres/S3).",
-                "Drove approach to reduce data record rejections from business partners by 95% versus the previous system."
+                "Architected data model, including support for robust auditability.",
+                "Maintained application deployment environments (AWS EC2/RDS Postgres/S3)."
             ]
         },
         {
