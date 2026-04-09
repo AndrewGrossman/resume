@@ -31,20 +31,31 @@ jobs:
     - name: Install npm packages
       run: npm install
 
+    - name: Create no-sandbox Chrome wrapper
+      run: |
+        printf '#!/bin/bash\nexec google-chrome-stable --no-sandbox "$@"\n' | sudo tee /usr/local/bin/chrome-nosandbox
+        sudo chmod +x /usr/local/bin/chrome-nosandbox
+
     - name: Generate variant JSONs
       run: python3 generate_tailored_resume_jsons.py
 
-    - name: Enable Chrome sandbox
-      run: sudo sysctl -w kernel.unprivileged_userns_clone=1
-
     - name: Build all resume PDFs and HTMLs
+      env:
+        PUPPETEER_EXECUTABLE_PATH: /usr/local/bin/chrome-nosandbox
       run: |
         mkdir -p generated_resumes
+        failed=0
         for file in generated_resume_jsons/*.json; do
           name=$(basename "$file" .json)
-          node_modules/.bin/resume export "generated_resumes/Andrew Grossman - $name - Resume.pdf" --resume "$file" --theme jsonresume-theme-relaxed
+          pdf_out=$(node_modules/.bin/resume export "generated_resumes/Andrew Grossman - $name - Resume.pdf" --resume "$file" --theme jsonresume-theme-relaxed 2>&1)
+          echo "$pdf_out"
+          if echo "$pdf_out" | grep -q "createPdf errored out"; then
+            echo "ERROR: PDF generation failed for $name"
+            failed=1
+          fi
           node_modules/.bin/resume export "generated_resumes/Andrew Grossman - $name - Resume.html" --resume "$file" --theme jsonresume-theme-relaxed
         done
+        exit $failed
 
     - name: Commit changes
       run: |
