@@ -55,7 +55,7 @@
       "position": "Staff Backend Engineer",
       "url": "https://cabinethealth.com",
       "startDate": "2024-05-20",
-      "endDateNotCurrent": "2025-01-03",
+      "endDate": "2025-01-03",
       "summary": "Backend engineer for Cabinet's online pharmacy offering. Implemented software features in a Python/Django-based system supporting the customer account portal, internal business management systems, and integrations with pharmacy partners.",
       "highlights": [
         "Designed and optimized API endpoints to handle 10M+ provider and pharmacy records for prescription acquisition, reducing refill response times by 30%. Cleaned underlying third-party data using Polars.",
