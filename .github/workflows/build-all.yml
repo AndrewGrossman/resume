@@ -1,0 +1,81 @@
+name: Build all resume variants
+
+on:
+  workflow_dispatch:
+  push:
+    branches-ignore:
+      - main
+    paths:
+      - 'base-resume.json'
+      - 'generate_tailored_resume_jsons.py'
+      - 'package.json'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20'
+
+    - name: Setup Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.x'
+
+    - name: Install npm packages
+      run: npm install
+
+    - name: Patch theme icon CDN (simpleicons → jsdelivr for headless Chrome)
+      run: |
+        python3 -c "
+        import re, pathlib
+        f = pathlib.Path('node_modules/jsonresume-theme-relaxed/index.js')
+        c = f.read_text()
+        c = c.replace(
+          'https://cdn.simpleicons.org/\${name.toLowerCase().replace(\' \', \'\')}',
+          'https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/\${name.toLowerCase().replace(\' \', \'\')}.svg'
+        )
+        f.write_text(c)
+        print('Patched:', 'jsdelivr' in c)
+        "
+
+    - name: Create no-sandbox Chrome wrapper
+      run: |
+        printf '#!/bin/bash\nexec google-chrome-stable --no-sandbox "$@"\n' | sudo tee /usr/local/bin/chrome-nosandbox
+        sudo chmod +x /usr/local/bin/chrome-nosandbox
+
+    - name: Generate variant JSONs
+      run: python3 generate_tailored_resume_jsons.py
+
+    - name: Build all resume PDFs and HTMLs
+      env:
+        PUPPETEER_EXECUTABLE_PATH: /usr/local/bin/chrome-nosandbox
+      run: |
+        mkdir -p generated_resumes
+        failed=0
+        for file in generated_resume_jsons/*.json; do
+          name=$(basename "$file" .json)
+          pdf_out=$(node_modules/.bin/resume export "generated_resumes/Andrew Grossman - $name - Resume.pdf" --resume "$file" --theme jsonresume-theme-relaxed 2>&1)
+          echo "$pdf_out"
+          if echo "$pdf_out" | grep -q "createPdf errored out"; then
+            echo "ERROR: PDF generation failed for $name"
+            failed=1
+          fi
+          node_modules/.bin/resume export "generated_resumes/Andrew Grossman - $name - Resume.html" --resume "$file" --theme jsonresume-theme-relaxed
+        done
+        exit $failed
+
+    - name: Commit changes
+      run: |
+        git config --global user.email "actions@github.com"
+        git config --global user.name "GitHub Actions"
+        git add generated_resume_jsons/ generated_resumes/
+        git diff --quiet && git diff --staged --quiet || (git commit -m "CI: rebuild all resume variants" && git pull --rebase -X theirs && git push)
+      env:
+        GITHUB_TOKEN: ${{ github.token }}

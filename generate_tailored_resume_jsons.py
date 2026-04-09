@@ -61,6 +61,11 @@ def generate_resume(base_resume, resume_key):
         if key in base_resume:
             new_resume[key] = process_fields(base_resume[key], fields, resume_key)
 
+    skills_variants = base_resume.get('skillsShownInVariants')
+    if skills_variants is not None and resume_key not in skills_variants:
+        new_resume.pop('skills', None)
+    new_resume.pop('skillsShownInVariants', None)
+
     return new_resume
 
 

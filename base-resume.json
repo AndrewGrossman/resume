@@ -14,7 +14,7 @@
       "default": "(410) 645-0462",
       "NoContact": ""
     },
-    "summary": "Seasoned developer and engineering lead with 15+ years of experience, including a background in commercial data collection and processing. Strong background in PostgreSQL, Python, and Django, with experience in AWS, ETL, optimization, and software development management.",
+    "summary": "Seasoned developer and engineering lead with 20+ years of experience, including a background in commercial data collection and processing. Strong background in PostgreSQL, Python, and Django, with experience in AWS, GCP, Kubernetes, ETL, optimization, and software development management.",
     "location": {
       "city": "Baltimore",
       "countryCode": "US",
@@ -35,6 +35,22 @@
   },
   "work": [
     {
+      "name": "Bestow",
+      "position": "Staff Software Engineer / Engineering Manager",
+      "url": "https://bestow.com",
+      "startDate": "2025-02-10",
+      "summary": "Staff Software Engineer on the Enrollment Platform team from February 2025; promoted to Engineering Manager of the Enrollment Platform Core team in January 2026.",
+      "highlights": [
+        "Built the first vendor data integration in a new framework, then directed and trained team members through two subsequent integrations delivering APS and EHR data to underwriters.",
+        "Enabled multi-actor insurance applications (owner ≠ insured) through cross-team coordination, delivering juvenile products for Transamerica and USAA including a live indexed universal life product.",
+        "Scoped a release tooling initiative to stabilize the team's deployment process and drove execution through three Central Europe contractors.",
+        "Served as hiring manager for two teammates (one contractor, one FTE) and onboarding buddy for two others as the broader division scaled from ~10 to 30+ engineers.",
+        { "Verbose": "Managed a team of 5–13 engineers through ceremonies, 1:1s, and performance reporting." },
+        "Built hands-on proficiency in GCP, Kubernetes, New Relic, Pub/Sub, Protobufs, and gRPC; introductory exposure to Go and Drools.",
+        { "Verbose": "Championed AI tooling adoption (Claude, Claude Code, Gemini, Cursor) and participated in the company AI working group." }
+      ]
+    },
+    {
       "name": "Cabinet Health",
       "position": "Staff Backend Engineer",
       "url": "https://cabinethealth.com",
@@ -46,7 +62,7 @@
         { "Pharmacy": "Collaborated with cross-functional teams to design and launch new acquisition and fulfillment features, increasing order processing speed by 10%." },
         "Implemented an automated notification system to send timely SMS and email alerts, increasing refill rates by 20% and optimizing operational workload by 15%.",
         { "Pharmacy":  "Designed backend architecture to integrate pharmacy partner data for Cabinet’s network of partners, ensuring seamless prescription management for patients."},
-        "Spearheaded data analytics in BI tooling (Metabase), delivering actionable insights to senior leadership for strategic decision-making."
+        { "Verbose": "Spearheaded data analytics in BI tooling (Metabase), delivering actionable insights to senior leadership for strategic decision-making." }
       ]
     },
     {
@@ -55,9 +71,9 @@
       "url": "https://songtrust.com",
       "startDate": "2023-07-01",
       "endDate": "2024-04-01",
-      "summary": "Engineering lead for the Songtrust product team. Responsible for the development and maintenance of the Songtrust.com web application with 30k+ active users, as well as internal facing enterprise tools. Managed a team of 6 engineers.",
+      "summary": "Engineering lead for the Songtrust product team. Responsible for the development and maintenance of the Songtrust.com Django/PostgreSQL web application with 30k+ active users, as well as internal facing enterprise tools. Managed a team of 6.",
       "highlights": [
-        "Guided the technical implementation of key application features, via team planning, ticketing, and code reviews.",
+        { "Verbose": "Guided the technical implementation of key application features, via team planning, ticketing, and code reviews." },
         {
           "default": "Identified $35K/year of since-realized savings in cloud costs.",
           "Data": ""
@@ -65,54 +81,29 @@
         "Functioned as departmental service owner for Postgres. Managed AWS RDS Postgres instances, including right-sizing, cost management, major version upgrades, and parameter configuration. Mentored new departmental DBA.",
         "Completed initiative to verify user identities, reactivating stalled business partnership impacting $2M of client earnings.",
         "Implemented SLA for incoming support requests, ensuring 95% of requests are responded to within 24 hours. Cleared 9 month request backlog in 3 months.",
-        "Drove completion of a dozen features previously stalled between code deployment and product acceptance QA activities.",
+        { "Verbose": "Drove completion of a dozen features previously stalled between code deployment and product acceptance QA activities." },
         "Applied more comprehensive monitoring and alerting, identifying ~75% of user-facing issues before they were reported.",
         { "Verbose": "Ensured high morale and team stability, increasing overall productivity. Onboarded 3 new engineers."}
       ]
     },
     {
       "name": "Songtrust / Downtown Music Publishing",
-      "position": "Engineering Manager",
-      "url": "https://songtrust.com",
-      "startDate": "2020-01-01",
-      "endDate": "2023-06-30",
-      "summary": "Team lead / back-end developer for a greenfield application managing music industry intellectual properties for the purpose of royalty collection.  Managed and mentored 9 engineers across multiple development teams.",
-      "highlights": [
-        "Architected data model, including support for robust auditability.",
-        "Set up a flexible Django/DRF environment with custom primitives for advanced Postgres feature usage.",
-        "Designed and implemented a custom ETL pipeline using Python and SQL for data ingress from multiple systems, including MS SQL Server sourced data.",
-        "Maintained application deployment environments (AWS EC2/RDS Postgres/S3).",
-        "Involved in and executed on departmental leadership initiatives focused on reaching an enterprise-level of governance, stability, and process.",
-        "Drove approach to reduce data record rejections from business partners by 95% versus the previous system.",
-        "Managed and refined team agile processes and development workflows, including JIRA configurations."
-      ]
-    },
-    {
-      "name": "Songtrust / Downtown Music Publishing",
-      "position": "Senior Software Engineer",
+      "position": "Engineering Manager / Senior Software Engineer",
       "url": "https://songtrust.com",
       "startDate": "2018-06-16",
-      "endDate": "2019-12-31",
-      "summary": {
-        "default": "Full-stack developer on a consumer-facing Django/PostgreSQL/Ubuntu/AWS-hosted consumer-facing application for facilitating songwriter royalties collection.",
-        "Data": "Full-stack developer on a consumer-facing PostgreSQL/Python/Django/Ubuntu/AWS-hosted consumer-facing application for facilitating songwriter royalties collection."
-      },
+      "endDate": "2023-06-30",
+      "summary": "Joined as Senior Software Engineer; promoted to Engineering Manager in 2020. Led a greenfield Django/DRF/PostgreSQL application managing music industry intellectual properties for royalty collection. Managed and mentored 9 engineers across multiple development teams.",
       "highlights": [
-        "Implemented a feature to allow users to share songwriters across accounts 3 months ahead of schedule.",
-        "Optimized database queries and application performance.",
-        "Implemented new front-end features in a legacy jQuery/Backbone environment."
-      ]
-    },
-    {
-      "name": "Notes Frequencies, Inc.",
-      "position": "Engineering Consultant",
-      "url": "https://notes.fm",
-      "startDate": "2024-05-06",
-      "summary": "Backend architect for Notes' financial management platform for musicians. Automated and exposed data retrieval activities to service Notes' client-facing app and internal tooling.",
-      "highlights": [
-        "Architected greenfield application based on Django/Django-Ninja/PostgreSQL/Celery/Docker/AWS.",
-        "Automated processing and loading of financial statements using Pandas.",
-        "Automated account registration and website/API data retrieval activities using Python and Selenium."
+        "Architected data model, including support for robust auditability.",
+        { "Verbose": "Set up a flexible Django/DRF environment with custom primitives for advanced Postgres feature usage." },
+        "Designed and implemented a custom ETL pipeline using Python and SQL for data ingress from multiple systems, including MS SQL Server sourced data.",
+        "Maintained application deployment environments (AWS EC2/RDS Postgres/S3).",
+        { "Verbose": "Involved in and executed on departmental leadership initiatives focused on reaching an enterprise-level of governance, stability, and process." },
+        "Drove approach to reduce data record rejections from business partners by 95% versus the previous system.",
+        { "Verbose": "Managed and refined team agile processes and development workflows, including JIRA configurations." },
+        { "Verbose": "Implemented a feature to allow users to share songwriters across accounts 3 months ahead of schedule." },
+        { "Verbose": "Optimized database queries and application performance." },
+        { "Verbose": "Implemented new front-end features in a legacy jQuery/Backbone environment." }
       ]
     },
     {
@@ -128,7 +119,7 @@
         },
         "Architected and implemented application foundation using Django/Tastypie/Dojo frameworks.",
         "Engineered third-party data imports (ETL) from various formats into PostgreSQL database.",
-        "Led end-to-end team management including task assignment, documentation, code reviews, cross-functional coordination with PM/QA teams, and personnel responsibilities including hiring and performance reviews.",
+        { "Verbose": "Led end-to-end team management including task assignment, documentation, code reviews, cross-functional coordination with PM/QA teams, and personnel responsibilities including hiring and performance reviews." },
         {"Verbose": "Managed developer and testing VM instances (KVM, VMWare)."}
       ]
     },
@@ -152,10 +143,23 @@
     ],
   "prunedWork": [
     {
+      "name": "Notes Frequencies, Inc.",
+      "position": "Engineering Consultant",
+      "url": "https://notes.fm",
+      "startDate": "2024-05-06",
+      "endDate": "2025-11",
+      "summary": "Backend architect for Notes' financial management platform for musicians.",
+      "highlights": [
+        "Architected greenfield application based on Django/Django-Ninja/PostgreSQL/Celery/Docker/AWS.",
+        "Automated processing and loading of financial statements using Pandas.",
+        "Automated account registration and website/API data retrieval activities using Python and Selenium."
+      ]
+    },
+    {
       "name": "Stifel Nicolaus",
       "position": "Outside Software Consultant",
       "startDate": "2007",
-      "endDate": "2018",
+      "endDate": "2025",
       "summary": "Developed advanced Microsoft Excel applications w/VBA for stock selection and tracking.",
       "url": "https://www.stifel.com/"
     }
@@ -171,10 +175,7 @@
       "institution": "UMBC",
       "url": "https://umbc.edu/",
       "area": "Master of Science in Computer Science",
-      "endDate": "2007",
-      "courses": [
-        "Completed research paper in algorithm development including simulation and statistical analysis entitled \"Indirect Data Reporting in Wireless Sensor Networks with Multiple Mobile Nodes.\""
-      ]
+      "endDate": "2007"
     },
     {
       "institution": "University of Maryland, College Park",
@@ -184,6 +185,7 @@
       "endDate": "2001"
     }
   ],
+  "skillsShownInVariants": ["Verbose", "Data", "Django", "Python", "Pharmacy", "NoContact"],
   "skills": [
     {
       "name": "Python",
@@ -192,7 +194,8 @@
         "Django",
         "Django Rest Framework",
         "SQLAlchemy",
-        "Celery"
+        "Celery",
+        "Flask"
       ]
     },
     {
@@ -208,13 +211,16 @@
       ]
     },
     {
-      "name": "AWS",
+      "name": "Cloud Platforms",
       "level": "Advanced",
       "keywords": [
+        "AWS",
+        "GCP",
         "RDS",
         "EC2",
         "S3",
-        "Lambda"
+        "Lambda",
+        "Kubernetes"
       ]
     },
     {
@@ -226,7 +232,11 @@
         "Git",
         "GitHub 🥚",
         "Datadog",
+        "New Relic",
         "REST API",
+        "gRPC",
+        "Pub/Sub",
+        "Protobufs",
         "Confluence"
       ]
     },
@@ -236,7 +246,9 @@
       "keywords": [
         "People Management",
         "People Development",
-        "Agile"
+        "Agile",
+        "Hiring",
+        "DX"
       ]
     },
     {
@@ -251,6 +263,22 @@
         "Visual Basic / VBA",
         "Bash"
       ]
+    },
+    {
+      "name": "AI / LLM Tools",
+      "level": "Advanced",
+      "keywords": [
+        "Claude",
+        "Claude Code",
+        "GitHub Copilot",
+        "Cursor",
+        "Gemini",
+        "MCP"
+      ]
     }
   ]
 }
+
+
+
+
