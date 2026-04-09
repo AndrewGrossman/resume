@@ -72,35 +72,14 @@
             "name": "Songtrust / Downtown Music Publishing",
             "position": "Engineering Manager",
             "url": "https://songtrust.com",
-            "startDate": "2020-01-01",
+            "startDate": "2018-06-16",
             "endDate": "2023-06-30",
-            "summary": "Team lead / back-end developer for a greenfield application managing music industry intellectual properties for the purpose of royalty collection.  Managed and mentored 9 engineers across multiple development teams.",
+            "summary": "Joined as Senior Software Engineer; promoted to Engineering Manager in 2020. Led a greenfield application managing music industry intellectual properties for royalty collection. Managed and mentored 9 engineers across multiple development teams.",
             "highlights": [
                 "Architected data model, including support for robust auditability.",
                 "Designed and implemented a custom ETL pipeline using Python and SQL for data ingress from multiple systems, including MS SQL Server sourced data.",
                 "Maintained application deployment environments (AWS EC2/RDS Postgres/S3).",
                 "Drove approach to reduce data record rejections from business partners by 95% versus the previous system."
-            ]
-        },
-        {
-            "name": "Songtrust / Downtown Music Publishing",
-            "position": "Senior Software Engineer",
-            "url": "https://songtrust.com",
-            "startDate": "2018-06-16",
-            "endDate": "2019-12-31",
-            "summary": "Full-stack developer on a consumer-facing PostgreSQL/Python/Django/Ubuntu/AWS-hosted consumer-facing application for facilitating songwriter royalties collection.",
-            "highlights": []
-        },
-        {
-            "name": "Notes Frequencies, Inc.",
-            "position": "Engineering Consultant",
-            "url": "https://notes.fm",
-            "startDate": "2024-05-06",
-            "endDate": "2025-11",
-            "summary": "Backend architect for Notes' financial management platform for musicians. Automated and exposed data retrieval activities to service Notes' client-facing app and internal tooling.",
-            "highlights": [
-                "Architected greenfield application based on Django/Django-Ninja/PostgreSQL/Celery/Docker/AWS.",
-                "Automated processing and loading of financial statements using Pandas."
             ]
         },
         {
@@ -127,6 +106,19 @@
         }
     ],
     "prunedWork": [
+        {
+            "name": "Notes Frequencies, Inc.",
+            "position": "Engineering Consultant",
+            "url": "https://notes.fm",
+            "startDate": "2024-05-06",
+            "endDate": "2025-11",
+            "summary": "Backend architect for Notes' financial management platform for musicians.",
+            "highlights": [
+                "Architected greenfield application based on Django/Django-Ninja/PostgreSQL/Celery/Docker/AWS.",
+                "Automated processing and loading of financial statements using Pandas.",
+                "Automated account registration and website/API data retrieval activities using Python and Selenium."
+            ]
+        },
         {
             "name": "Stifel Nicolaus",
             "position": "Outside Software Consultant",

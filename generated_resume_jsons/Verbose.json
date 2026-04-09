@@ -79,9 +79,9 @@
             "name": "Songtrust / Downtown Music Publishing",
             "position": "Engineering Manager",
             "url": "https://songtrust.com",
-            "startDate": "2020-01-01",
+            "startDate": "2018-06-16",
             "endDate": "2023-06-30",
-            "summary": "Team lead / back-end developer for a greenfield application managing music industry intellectual properties for the purpose of royalty collection.  Managed and mentored 9 engineers across multiple development teams.",
+            "summary": "Joined as Senior Software Engineer; promoted to Engineering Manager in 2020. Led a greenfield application managing music industry intellectual properties for royalty collection. Managed and mentored 9 engineers across multiple development teams.",
             "highlights": [
                 "Architected data model, including support for robust auditability.",
                 "Set up a flexible Django/DRF environment with custom primitives for advanced Postgres feature usage.",
@@ -89,33 +89,10 @@
                 "Maintained application deployment environments (AWS EC2/RDS Postgres/S3).",
                 "Involved in and executed on departmental leadership initiatives focused on reaching an enterprise-level of governance, stability, and process.",
                 "Drove approach to reduce data record rejections from business partners by 95% versus the previous system.",
-                "Managed and refined team agile processes and development workflows, including JIRA configurations."
-            ]
-        },
-        {
-            "name": "Songtrust / Downtown Music Publishing",
-            "position": "Senior Software Engineer",
-            "url": "https://songtrust.com",
-            "startDate": "2018-06-16",
-            "endDate": "2019-12-31",
-            "summary": "Full-stack developer on a consumer-facing Django/PostgreSQL/Ubuntu/AWS-hosted consumer-facing application for facilitating songwriter royalties collection.",
-            "highlights": [
+                "Managed and refined team agile processes and development workflows, including JIRA configurations.",
                 "Implemented a feature to allow users to share songwriters across accounts 3 months ahead of schedule.",
                 "Optimized database queries and application performance.",
                 "Implemented new front-end features in a legacy jQuery/Backbone environment."
-            ]
-        },
-        {
-            "name": "Notes Frequencies, Inc.",
-            "position": "Engineering Consultant",
-            "url": "https://notes.fm",
-            "startDate": "2024-05-06",
-            "endDate": "2025-11",
-            "summary": "Backend architect for Notes' financial management platform for musicians. Automated and exposed data retrieval activities to service Notes' client-facing app and internal tooling.",
-            "highlights": [
-                "Architected greenfield application based on Django/Django-Ninja/PostgreSQL/Celery/Docker/AWS.",
-                "Automated processing and loading of financial statements using Pandas.",
-                "Automated account registration and website/API data retrieval activities using Python and Selenium."
             ]
         },
         {
@@ -148,6 +125,19 @@
         }
     ],
     "prunedWork": [
+        {
+            "name": "Notes Frequencies, Inc.",
+            "position": "Engineering Consultant",
+            "url": "https://notes.fm",
+            "startDate": "2024-05-06",
+            "endDate": "2025-11",
+            "summary": "Backend architect for Notes' financial management platform for musicians.",
+            "highlights": [
+                "Architected greenfield application based on Django/Django-Ninja/PostgreSQL/Celery/Docker/AWS.",
+                "Automated processing and loading of financial statements using Pandas.",
+                "Automated account registration and website/API data retrieval activities using Python and Selenium."
+            ]
+        },
         {
             "name": "Stifel Nicolaus",
             "position": "Outside Software Consultant",
