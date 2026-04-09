@@ -41,13 +41,13 @@
       "startDate": "2025-02-10",
       "summary": "Staff Software Engineer on the Enrollment Platform team from February 2025; promoted to Engineering Manager of the Enrollment Platform Core team in January 2026.",
       "highlights": [
-        "Built the first vendor data integration in a new framework, then directed and trained team members through two subsequent integrations delivering APS and EHR data to underwriters.",
         "Enabled multi-actor insurance applications (owner ≠ insured) through cross-team coordination, delivering juvenile products for Transamerica and USAA including a live indexed universal life product.",
+        "Helped establish a new external data service integration framework, building the attending physician statements integration and directing team members through subsequent integrations for medical and prescription data.",
+        "Maintained and extended core platform capabilities across REST APIs, automated underwriting configuration (CUE), and event-driven service integrations (Pub/Sub, gRPC, Protobufs); performed releases and served as on-call engineer and incident commander.",
         "Scoped a release tooling initiative to stabilize the team's deployment process and drove execution through three Central Europe contractors.",
-        "Served as hiring manager for two teammates (one contractor, one FTE) and onboarding buddy for two others as the broader division scaled from ~10 to 30+ engineers.",
-        { "Verbose": "Managed a team of 5–13 engineers through ceremonies, 1:1s, and performance reporting." },
-        "Built hands-on proficiency in GCP, Kubernetes, New Relic, Pub/Sub, Protobufs, and gRPC; introductory exposure to Go and Drools.",
-        { "Verbose": "Championed AI tooling adoption (Claude, Claude Code, Gemini, Cursor) and participated in the company AI working group." }
+        "Served as hiring manager for two roles (contractor and FTE); also conducted technical interviews across additional hiring pipelines.",
+        "Served as an informal onboarding anchor for incoming engineers on a complex platform, anticipating knowledge gaps and reducing ramp-up friction as the division scaled from ~10 to 30+ engineers.",
+        "Championed AI tooling adoption (Claude, Claude Code, Gemini, Cursor) and participated in the company AI working group."
       ]
     },
     {
