@@ -60,7 +60,7 @@
             "url": "https://songtrust.com",
             "startDate": "2023-07-01",
             "endDate": "2024-04-01",
-            "summary": "Engineering lead for the Songtrust product team. Responsible for the development and maintenance of the Songtrust.com web application with 30k+ active users, as well as internal facing enterprise tools. Managed a team of 6 engineers.",
+            "summary": "Engineering lead for the Songtrust product team. Responsible for the development and maintenance of the Songtrust.com Django/PostgreSQL web application with 30k+ active users, as well as internal facing enterprise tools. Managed a team of 6 engineers.",
             "highlights": [
                 "Identified $35K/year of since-realized savings in cloud costs.",
                 "Functioned as departmental service owner for Postgres. Managed AWS RDS Postgres instances, including right-sizing, cost management, major version upgrades, and parameter configuration. Mentored new departmental DBA.",
@@ -75,7 +75,7 @@
             "url": "https://songtrust.com",
             "startDate": "2018-06-16",
             "endDate": "2023-06-30",
-            "summary": "Joined as Senior Software Engineer; promoted to Engineering Manager in 2020. Led a greenfield application managing music industry intellectual properties for royalty collection. Managed and mentored 9 engineers across multiple development teams.",
+            "summary": "Joined as Senior Software Engineer; promoted to Engineering Manager in 2020. Led a greenfield Django/DRF/PostgreSQL application managing music industry intellectual properties for royalty collection. Managed and mentored 9 engineers across multiple development teams.",
             "highlights": [
                 "Architected data model, including support for robust auditability.",
                 "Designed and implemented a custom ETL pipeline using Python and SQL for data ingress from multiple systems, including MS SQL Server sourced data.",
@@ -223,8 +223,7 @@
                 "Javascript",
                 "Excel",
                 "Visual Basic / VBA",
-                "Bash",
-                "Go"
+                "Bash"
             ]
         },
         {
