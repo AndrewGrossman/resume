@@ -1,0 +1,53 @@
+name: Build all resume variants
+
+on:
+  workflow_dispatch:
+  push:
+    branches-ignore:
+      - main
+    paths:
+      - 'base-resume.json'
+      - 'generate_tailored_resume_jsons.py'
+      - 'package.json'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20'
+
+    - name: Setup Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.x'
+
+    - name: Install npm packages
+      run: npm install
+
+    - name: Generate variant JSONs
+      run: python3 generate_tailored_resume_jsons.py
+
+    - name: Build all resume PDFs and HTMLs
+      run: |
+        mkdir -p generated_resumes
+        for file in generated_resume_jsons/*.json; do
+          name=$(basename "$file" .json)
+          node_modules/.bin/resume export "generated_resumes/Andrew Grossman - $name - Resume.pdf" --resume "$file" --theme jsonresume-theme-relaxed
+          node_modules/.bin/resume export "generated_resumes/Andrew Grossman - $name - Resume.html" --resume "$file" --theme jsonresume-theme-relaxed
+        done
+
+    - name: Commit changes
+      run: |
+        git config --global user.email "actions@github.com"
+        git config --global user.name "GitHub Actions"
+        git add generated_resume_jsons/ generated_resumes/
+        git diff --quiet && git diff --staged --quiet || (git commit -m "CI: rebuild all resume variants" && git pull --rebase -X theirs && git push)
+      env:
+        GITHUB_TOKEN: ${{ github.token }}
