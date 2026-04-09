@@ -8,7 +8,7 @@
         "NoResumesInUSimage": "https://avatars.githubusercontent.com/u/1409332?v=4",
         "email": "andrewgrossman.developer@gmail.com",
         "phone": "(410) 645-0462",
-        "summary": "Seasoned developer and engineering lead with 15+ years of experience, including a background in commercial data collection and processing. Strong background in PostgreSQL, Python, and Django, with experience in AWS, ETL, optimization, and software development management.",
+        "summary": "Seasoned developer and engineering lead with 20+ years of experience, including a background in commercial data collection and processing. Strong background in PostgreSQL, Python, and Django, with experience in AWS, GCP, Kubernetes, ETL, optimization, and software development management.",
         "location": {
             "city": "Baltimore",
             "countryCode": "US",
@@ -28,6 +28,22 @@
         ]
     },
     "work": [
+        {
+            "name": "Bestow",
+            "position": "Staff Software Engineer / Engineering Manager",
+            "url": "https://bestow.com",
+            "startDate": "2025-02-10",
+            "summary": "Staff Software Engineer on the Enrollment Platform team from February 2025; promoted to Engineering Manager of the Enrollment Platform Core team in January 2026.",
+            "highlights": [
+                "Built the first vendor data integration in a new framework, then directed and trained team members through two subsequent integrations delivering APS and EHR data to underwriters.",
+                "Enabled multi-actor insurance applications (owner ≠ insured) through cross-team coordination, delivering juvenile products for Transamerica and USAA including a live indexed universal life product.",
+                "Scoped a release tooling initiative to stabilize the team's deployment process and drove execution through three Central Europe contractors.",
+                "Served as hiring manager for two teammates (one contractor, one FTE) and onboarding buddy for two others as the broader division scaled from ~10 to 30+ engineers.",
+                "Managed a team of 5–13 engineers through ceremonies, 1:1s, and performance reporting.",
+                "Built hands-on proficiency in GCP, Kubernetes, New Relic, Pub/Sub, Protobufs, and gRPC; introductory exposure to Go and Drools.",
+                "Championed AI tooling adoption (Claude, Claude Code, Gemini, Cursor) and participated in the company AI working group."
+            ]
+        },
         {
             "name": "Cabinet Health",
             "position": "Staff Backend Engineer",
@@ -94,6 +110,7 @@
             "position": "Engineering Consultant",
             "url": "https://notes.fm",
             "startDate": "2024-05-06",
+            "endDate": "2025-11",
             "summary": "Backend architect for Notes' financial management platform for musicians. Automated and exposed data retrieval activities to service Notes' client-facing app and internal tooling.",
             "highlights": [
                 "Architected greenfield application based on Django/Django-Ninja/PostgreSQL/Celery/Docker/AWS.",
@@ -135,7 +152,7 @@
             "name": "Stifel Nicolaus",
             "position": "Outside Software Consultant",
             "startDate": "2007",
-            "endDate": "2018",
+            "endDate": "2025",
             "summary": "Developed advanced Microsoft Excel applications w/VBA for stock selection and tracking.",
             "url": "https://www.stifel.com/"
         }
@@ -172,7 +189,8 @@
                 "Django",
                 "Django Rest Framework",
                 "SQLAlchemy",
-                "Celery"
+                "Celery",
+                "Flask"
             ]
         },
         {
@@ -188,13 +206,16 @@
             ]
         },
         {
-            "name": "AWS",
+            "name": "Cloud Platforms",
             "level": "Advanced",
             "keywords": [
+                "AWS",
+                "GCP",
                 "RDS",
                 "EC2",
                 "S3",
-                "Lambda"
+                "Lambda",
+                "Kubernetes"
             ]
         },
         {
@@ -206,7 +227,11 @@
                 "Git",
                 "GitHub 🥚",
                 "Datadog",
+                "New Relic",
                 "REST API",
+                "gRPC",
+                "Pub/Sub",
+                "Protobufs",
                 "Confluence"
             ]
         },
@@ -216,7 +241,9 @@
             "keywords": [
                 "People Management",
                 "People Development",
-                "Agile"
+                "Agile",
+                "Hiring",
+                "DX"
             ]
         },
         {
@@ -228,7 +255,20 @@
                 "Javascript",
                 "Excel",
                 "Visual Basic / VBA",
-                "Bash"
+                "Bash",
+                "Go"
+            ]
+        },
+        {
+            "name": "AI / LLM Tools",
+            "level": "Advanced",
+            "keywords": [
+                "Claude",
+                "Claude Code",
+                "GitHub Copilot",
+                "Cursor",
+                "Gemini",
+                "MCP"
             ]
         }
     ]
