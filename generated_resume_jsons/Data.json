@@ -139,10 +139,7 @@
             "institution": "UMBC",
             "url": "https://umbc.edu/",
             "area": "Master of Science in Computer Science",
-            "endDate": "2007",
-            "courses": [
-                "Completed research paper in algorithm development including simulation and statistical analysis entitled \"Indirect Data Reporting in Wireless Sensor Networks with Multiple Mobile Nodes.\""
-            ]
+            "endDate": "2007"
         },
         {
             "institution": "University of Maryland, College Park",
