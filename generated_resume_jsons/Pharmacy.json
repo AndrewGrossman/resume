@@ -66,11 +66,11 @@
             "endDate": "2024-04-01",
             "summary": "Engineering lead for the Songtrust product team. Responsible for the development and maintenance of the Songtrust.com Django/PostgreSQL web application with 30k+ active users, as well as internal facing enterprise tools. Managed a team of 6.",
             "highlights": [
-                "Identified $35K/year of since-realized savings in cloud costs.",
-                "Functioned as departmental service owner for Postgres. Managed AWS RDS Postgres instances, including right-sizing, cost management, major version upgrades, and parameter configuration. Mentored new departmental DBA.",
                 "Completed initiative to verify user identities, reactivating stalled business partnership impacting $2M of client earnings.",
                 "Implemented SLA for incoming support requests, ensuring 95% of requests are responded to within 24 hours. Cleared 9 month request backlog in 3 months.",
-                "Applied more comprehensive monitoring and alerting, identifying ~75% of user-facing issues before they were reported."
+                "Identified $35K/year of since-realized savings in cloud costs.",
+                "Applied more comprehensive monitoring and alerting, identifying ~75% of user-facing issues before they were reported.",
+                "Functioned as departmental service owner for Postgres. Managed AWS RDS Postgres instances, including right-sizing, cost management, major version upgrades, and parameter configuration. Mentored new departmental DBA."
             ]
         },
         {
