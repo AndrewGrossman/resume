@@ -1,0 +1,17 @@
+version: 2
+updates:
+  # Keep GitHub Actions up to date (will also surface SHA-pin opportunities)
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    labels:
+      - "dependencies"
+
+  # Keep npm dependencies up to date (surfaces vulnerable transitive deps)
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    labels:
+      - "dependencies"
