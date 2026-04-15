@@ -1,0 +1,90 @@
+{
+    "meta": {
+        "theme": "jsonresume-theme-relaxed"
+    },
+    "basics": {
+        "name": "Andrew G. Grossman, MSc, MBA",
+        "label": "",
+        "email": "andrewgrossman.developer@gmail.com",
+        "phone": "(410) 645-0462",
+        "location": {
+            "city": "Baltimore",
+            "countryCode": "US",
+            "region": "Maryland"
+        },
+        "profiles": [
+            {
+                "url": "https://github.com/AndrewGrossman",
+                "username": "AndrewGrossman",
+                "network": "github"
+            },
+            {
+                "url": "https://www.linkedin.com/in/andrew-g-grossman/",
+                "username": "andrew-g-grossman",
+                "network": "linkedin"
+            }
+        ]
+    },
+    "work": [
+        {
+            "name": "Bestow",
+            "position": "Staff Software Engineer / Engineering Manager",
+            "url": "https://bestow.com",
+            "startDate": "2025-02-10",
+            "summary": "Staff Software Engineer promoted to Engineering Manager on the Enrollment Platform Core team; leading a Python/Flask platform team on GCP/Kubernetes.",
+            "highlights": [
+                "Enabled multi-actor insurance applications (owner ≠ insured), delivering juvenile products for Transamerica and USAA including a live indexed universal life product.",
+                "Helped establish an external data service integration framework, building the attending physician statements integration and directing subsequent integrations for medical and prescription data.",
+                "Scoped a release tooling initiative to stabilize deployment processes and drove execution through three contractors; served as hiring manager for two roles."
+            ]
+        },
+        {
+            "name": "Cabinet Health",
+            "position": "Staff Backend Engineer",
+            "url": "https://cabinethealth.com",
+            "startDate": "2024-05-20",
+            "endDate": "2025-01-03",
+            "summary": "Backend engineer for an online pharmacy, using Python/Django.",
+            "highlights": [
+                "Optimized API endpoints handling 10M+ provider and pharmacy records, reducing refill response times by 30%.",
+                "Implemented automated SMS/email notification system, increasing refill rates by 20% and reducing operational workload by 15%."
+            ]
+        },
+        {
+            "name": "Songtrust / Downtown Music Publishing",
+            "position": "Engineering Manager → Director of Software Engineering",
+            "url": "https://songtrust.com",
+            "startDate": "2018-06-16",
+            "endDate": "2024-04-01",
+            "summary": "Joined as Senior Software Engineer; promoted through Engineering Manager to Director of Software Engineering. Led a Django/PostgreSQL web application with 30k+ active users and managed teams of up to 9 engineers.",
+            "highlights": [
+                "Reactivated stalled business partnership impacting $2M of client earnings by completing a user identity verification initiative.",
+                "Reduced data record rejections from business partners by 95% through a custom ETL pipeline (Python/SQL) and improved data modeling.",
+                "Identified $35K/year in cloud cost savings; applied monitoring and alerting catching ~75% of user-facing issues before they were reported."
+            ]
+        },
+        {
+            "name": "Bridgestone Commercial Solutions",
+            "position": "Software Developer → Software Lead / Development Manager",
+            "url": "https://commercial.bridgestone.com/",
+            "startDate": "2003",
+            "endDate": "2018",
+            "summary": "Built and led development of B2B commercial data collection and fleet inventory products using Django/PostgreSQL. Led a team of 8; product reached 600+ users and 3M+ survey readings.",
+            "highlights": []
+        }
+    ],
+    "education": [
+        {
+            "institution": "University of Baltimore",
+            "url": "https://www.ubalt.edu/",
+            "area": "Master of Business Administration",
+            "endDate": "2014"
+        },
+        {
+            "institution": "UMBC",
+            "url": "https://umbc.edu/",
+            "area": "Master of Science in Computer Science",
+            "endDate": "2007"
+        }
+    ]
+}
