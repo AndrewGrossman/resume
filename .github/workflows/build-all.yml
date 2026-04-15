@@ -31,20 +31,6 @@ jobs:
     - name: Install npm packages
       run: npm ci
 
-    - name: Patch theme icon CDN (simpleicons → jsdelivr for headless Chrome)
-      run: |
-        python3 -c "
-        import re, pathlib
-        f = pathlib.Path('node_modules/jsonresume-theme-relaxed/index.js')
-        c = f.read_text()
-        c = c.replace(
-          'https://cdn.simpleicons.org/\${name.toLowerCase().replace(\' \', \'\')}',
-          'https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/\${name.toLowerCase().replace(\' \', \'\')}.svg'
-        )
-        f.write_text(c)
-        print('Patched:', 'jsdelivr' in c)
-        "
-
     - name: Create no-sandbox Chrome wrapper
       run: |
         printf '#!/bin/bash\nexec google-chrome-stable --no-sandbox "$@"\n' | sudo tee /usr/local/bin/chrome-nosandbox
