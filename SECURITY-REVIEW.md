@@ -8,13 +8,53 @@
 
 ## Summary
 
-This repository is a personal resume builder with a GitHub Actions CI/CD pipeline. No critical vulnerabilities were found. The findings below are primarily supply-chain and CI hygiene concerns.
+This repository is a personal resume builder with a GitHub Actions CI/CD pipeline. `npm audit` reports **34 known vulnerabilities in npm dependencies** (3 critical, 17 high, 12 moderate, 2 low), most of which can be fixed by running `npm audit fix`. Additional CI hygiene and supply-chain findings are documented below.
 
 ---
 
 ## Findings
 
-### 1. Unpinned GitHub Actions (Medium)
+### 1. Vulnerable npm Dependencies (Critical/High/Moderate/Low)
+
+**File:** `package.json` / `package-lock.json`
+
+`npm audit` reports **34 vulnerabilities** across transitive dependencies of `resume-cli` and `jsonresume-theme-relaxed`. The majority are inherited from `resume-cli`'s dependencies (`browser-sync`, `localtunnel`, `axios`, `puppeteer`, etc.).
+
+**Critical (3):**
+| Package | Issue |
+|---|---|
+| `axios <=1.14.0` | CSRF, SSRF/credential leak via absolute URL, DoS via `__proto__`, NO_PROXY bypass, cloud metadata exfiltration |
+| `form-data 3.0.0–3.0.3` | Unsafe random function for multipart boundary |
+| `handlebars` | JavaScript injection via AST type confusion |
+
+**High (17, selected):**
+| Package | Issue |
+|---|---|
+| `tar-fs` | Symlink validation bypass / path traversal extraction |
+| `ws 8.0.0–8.17.0` | DoS via many HTTP headers |
+| `dset <=3.1.3` | Prototype pollution |
+| `lodash` | Prototype pollution; code injection via `_.template` |
+| `validator` | URL validation bypass |
+| `pug` (via `jsonresume-theme-elegant`) | Remote code execution via `pretty` option |
+
+**Note:** These dependencies are only used at **build time** (CI PDF/HTML generation) and are never deployed or served to end users. The exploitability of most findings requires an attacker to influence the build environment. That said, several are fixable at no cost.
+
+**Remediation:**
+
+```bash
+# Fix non-breaking issues immediately (fixes ~20 vulnerabilities)
+npm audit fix
+
+# Review the breaking change before applying:
+# Downgrades resume-cli to 3.0.0 (from 3.1.2) — test PDF generation first
+npm audit fix --force
+```
+
+After `npm audit fix`, commit the updated `package-lock.json`. Evaluate whether `resume-cli@3.0.0` is functional before forcing the downgrade.
+
+---
+
+### 2. Unpinned GitHub Actions (Medium)
 
 **File:** `.github/workflows/build-all.yml` — lines 19, 22, 26
 
@@ -36,7 +76,7 @@ uses: actions/setup-python@0b93645e9fea7318ecaed2b359559ac225c90a2   # v5.3.0
 
 ---
 
-### 2. Mutable Package Dependency (Medium)
+### 3. Mutable Package Dependency — `jsonresume-theme-relaxed` (Medium)
 
 **File:** `package.json` — line 3
 
@@ -54,7 +94,29 @@ uses: actions/setup-python@0b93645e9fea7318ecaed2b359559ac225c90a2   # v5.3.0
 
 ---
 
-### 3. `npm install` Instead of `npm ci` in CI (Low)
+### 4. Unpinned GitHub Actions (Medium)
+
+**File:** `.github/workflows/build-all.yml` — lines 19, 22, 26
+
+```yaml
+uses: actions/checkout@v4
+uses: actions/setup-node@v4
+uses: actions/setup-python@v5
+```
+
+**Risk:** Mutable version tags mean a compromised upstream action repository could push malicious code under the same tag and have it execute in CI with full repository write access (`GITHUB_TOKEN`).
+
+**Recommendation:** Pin each action to a specific commit SHA:
+
+```yaml
+uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683      # v4.2.2
+uses: actions/setup-node@39370e3970a6d050c480ffad4ff0ed4d3fdee5af    # v4.1.0
+uses: actions/setup-python@0b93645e9fea7318ecaed2b359559ac225c90a2   # v5.3.0
+```
+
+---
+
+### 5. `npm install` Instead of `npm ci` in CI (Low)
 
 **File:** `.github/workflows/build-all.yml` — line 32
 
@@ -72,7 +134,7 @@ run: npm ci
 
 ---
 
-### 4. Runtime Patching of `node_modules` (Low)
+### 6. Runtime Patching of `node_modules` (Low)
 
 **File:** `.github/workflows/build-all.yml` — lines 35–46
 
@@ -82,7 +144,7 @@ The workflow patches `node_modules/jsonresume-theme-relaxed/index.js` in-place a
 
 ---
 
-### 5. `--no-sandbox` Chrome Flag (Informational)
+### 7. `--no-sandbox` Chrome Flag (Informational)
 
 **File:** `.github/workflows/build-all.yml` — line 50
 
@@ -90,13 +152,11 @@ The workflow patches `node_modules/jsonresume-theme-relaxed/index.js` in-place a
 exec google-chrome-stable --no-sandbox "$@"
 ```
 
-**Risk:** Disabling Chrome's sandbox is standard practice for headless Chrome in Linux CI containers (where the user namespace sandbox is unavailable), so this is expected and not exploitable in this context.
-
-**Note:** This is acceptable as-is for GitHub-hosted runners.
+Disabling Chrome's sandbox is standard practice for headless Chrome in Linux CI containers (where the user namespace sandbox is unavailable). This is acceptable as-is for GitHub-hosted runners.
 
 ---
 
-### 6. PII Committed to Repository (Informational)
+### 8. PII Committed to Repository (Informational)
 
 **File:** `base-resume.json` — lines 9–16
 
