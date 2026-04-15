@@ -29,7 +29,7 @@ jobs:
         python-version: '3.x'
 
     - name: Install npm packages
-      run: npm install
+      run: npm ci
 
     - name: Patch theme icon CDN (simpleicons → jsdelivr for headless Chrome)
       run: |

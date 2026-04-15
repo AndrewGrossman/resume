@@ -52,6 +52,8 @@ npm audit fix --force
 
 After `npm audit fix`, commit the updated `package-lock.json`. Evaluate whether `resume-cli@3.0.0` is functional before forcing the downgrade.
 
+Dependabot is now configured (`.github/dependabot.yml`) to open weekly PRs for npm dependency updates, which will surface these and future vulnerable packages automatically.
+
 ---
 
 ### 2. Unpinned GitHub Actions (Medium)
@@ -66,12 +68,20 @@ uses: actions/setup-python@v5
 
 **Risk:** Mutable version tags (`@v4`, `@v5`) mean a compromised upstream action repository could push malicious code under the same tag and have it execute in CI with full repository write access (`GITHUB_TOKEN`).
 
-**Recommendation:** Pin each action to a specific commit SHA:
+**Recommendation:** Pin each action to a specific commit SHA. Dependabot (now configured) will open weekly PRs to keep pinned versions current. To get initial SHAs, run locally:
+
+```bash
+git ls-remote https://github.com/actions/checkout 'refs/tags/v4.*' | grep '\^{}' | sort -V | tail -1
+git ls-remote https://github.com/actions/setup-node 'refs/tags/v4.*' | grep '\^{}' | sort -V | tail -1
+git ls-remote https://github.com/actions/setup-python 'refs/tags/v5.*' | grep '\^{}' | sort -V | tail -1
+```
+
+Then update the workflow:
 
 ```yaml
-uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683      # v4.2.2
-uses: actions/setup-node@39370e3970a6d050c480ffad4ff0ed4d3fdee5af    # v4.1.0
-uses: actions/setup-python@0b93645e9fea7318ecaed2b359559ac225c90a2   # v5.3.0
+uses: actions/checkout@<SHA>      # v4.x.x
+uses: actions/setup-node@<SHA>    # v4.x.x
+uses: actions/setup-python@<SHA>  # v5.x.x
 ```
 
 ---
@@ -140,7 +150,16 @@ run: npm ci
 
 The workflow patches `node_modules/jsonresume-theme-relaxed/index.js` in-place at build time to swap a CDN URL. While this happens inside a throwaway CI runner and is not persisted, modifying third-party code at runtime is fragile and non-transparent.
 
-**Recommendation:** Apply the fix as a proper patch in the `jsonresume-theme-relaxed` fork (since that repo is already owned) and remove the inline patching step from the workflow.
+**Recommendation:** Since `jsonresume-theme-relaxed` is an owned fork, apply the fix directly there. In the fork's `index.js`, find the icon URL template:
+
+```js
+// Change this:
+`https://cdn.simpleicons.org/${name.toLowerCase().replace(' ', '')}`
+// To this:
+`https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/${name.toLowerCase().replace(' ', '')}.svg`
+```
+
+Once that commit is in the fork, delete the entire "Patch theme icon CDN" step from this workflow and pin `jsonresume-theme-relaxed` in `package.json` to that commit SHA.
 
 ---
 
