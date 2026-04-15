@@ -1,0 +1,6 @@
+{
+  "name": "jsonresume-theme-relaxed-compact",
+  "version": "1.0.0",
+  "description": "Compact variant of jsonresume-theme-relaxed: hides Work Experience and Education section headers to recover vertical space on single-page resumes.",
+  "main": "index.js"
+}

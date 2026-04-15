@@ -12,8 +12,9 @@ generate_final_forms:
 	mkdir -p $(OUTPUT_DIR)
 	for file in $$(ls $(GENERATED_JSON_DIR)/*.json); do \
 		name=$$(basename $$file .json); \
-		node_modules/.bin/resume export "$(OUTPUT_DIR)/Andrew Grossman - $$name - Resume.pdf" --resume $$file --theme jsonresume-theme-relaxed; \
-		node_modules/.bin/resume export "$(OUTPUT_DIR)/Andrew Grossman - $$name - Resume.html" --resume $$file --theme jsonresume-theme-relaxed; \
+		if [ "$$name" = "OnePage" ]; then theme=jsonresume-theme-relaxed-compact; else theme=jsonresume-theme-relaxed; fi; \
+		node_modules/.bin/resume export "$(OUTPUT_DIR)/Andrew Grossman - $$name - Resume.pdf" --resume $$file --theme $$theme; \
+		node_modules/.bin/resume export "$(OUTPUT_DIR)/Andrew Grossman - $$name - Resume.html" --resume $$file --theme $$theme; \
 	done
 
 # Clean the output and generated JSON directories

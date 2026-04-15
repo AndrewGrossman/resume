@@ -85,6 +85,12 @@
             "url": "https://umbc.edu/",
             "area": "Master of Science in Computer Science",
             "endDate": "2007"
+        },
+        {
+            "institution": "University of Maryland, College Park",
+            "url": "https://maryland.edu/",
+            "area": "Bachelor of Science in Computer Science",
+            "endDate": "2001"
         }
     ]
 }
