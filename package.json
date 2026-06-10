@@ -2,5 +2,14 @@
   "dependencies": {
     "jsonresume-theme-relaxed": "github:AndrewGrossman/jsonresume-theme-relaxed",
     "resume-cli": "^3.1.2"
+  },
+  "overrides": {
+    "axios": "~0.32.0",
+    "braces": "~3.0.3",
+    "micromatch": "~4.0.8",
+    "send": "~0.19.2",
+    "serve-static": "~1.16.3",
+    "tar-fs": "~2.1.4",
+    "ws": "~8.21.0"
   }
 }
