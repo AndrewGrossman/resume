@@ -4,7 +4,10 @@
     "resume-cli": "^3.7.1"
   },
   "overrides": {
-    "axios": "~0.32.0",
+    "axios": {
+      ".": "~1.18.1",
+      "form-data": "~4.0.6"
+    },
     "braces": "~3.0.3",
     "micromatch": "~4.0.8",
     "send": "~0.19.2",
@@ -20,6 +23,8 @@
     "cosmiconfig": {
       "js-yaml": "~4.3.0"
     },
-    "brace-expansion": "~1.1.16"
+    "brace-expansion": "~1.1.16",
+    "form-data": "~3.0.5",
+    "undici": "~7.28.0"
   }
 }
