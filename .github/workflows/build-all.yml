@@ -58,6 +58,9 @@ jobs:
         exit $failed
 
     - name: Commit changes
+      # Dependabot-triggered runs get a read-only GITHUB_TOKEN no matter what
+      # permissions are set here, so pushing back would always fail with 403.
+      if: github.actor != 'dependabot[bot]'
       run: |
         git config --global user.email "actions@github.com"
         git config --global user.name "GitHub Actions"

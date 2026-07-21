@@ -1,7 +1,7 @@
 {
   "dependencies": {
     "jsonresume-theme-relaxed": "github:AndrewGrossman/jsonresume-theme-relaxed",
-    "resume-cli": "^3.1.2"
+    "resume-cli": "^3.7.1"
   },
   "overrides": {
     "axios": "~0.32.0",
