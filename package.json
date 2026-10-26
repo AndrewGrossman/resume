@@ -34,6 +34,7 @@
     "puppeteer": "~25.16.0",
     "puppeteer-core": "~25.16.0",
     "@puppeteer/browsers": "~3.2.6",
-    "moment": "~2.31.0"
+    "moment": "~2.31.0",
+    "handlebars": "~4.7.10"
   }
 }
