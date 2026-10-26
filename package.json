@@ -4,13 +4,9 @@
   },
   "dependencies": {
     "jsonresume-theme-relaxed": "github:AndrewGrossman/jsonresume-theme-relaxed",
-    "resume-cli": "^3.7.2"
+    "resume-cli": "^3.8.3"
   },
   "overrides": {
-    "axios": {
-      ".": "~1.18.1",
-      "form-data": "~4.0.6"
-    },
     "braces": "~3.0.3",
     "micromatch": "~4.0.8",
     "send": "~0.19.2",
