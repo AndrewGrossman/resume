@@ -9,6 +9,8 @@ on:
       - 'base-resume.json'
       - 'generate_tailored_resume_jsons.py'
       - 'package.json'
+      - 'package-lock.json'
+      - '.github/workflows/build-all.yml'
 
 jobs:
   build:
@@ -47,13 +49,15 @@ jobs:
         failed=0
         for file in generated_resume_jsons/*.json; do
           name=$(basename "$file" .json)
-          pdf_out=$(node_modules/.bin/resume export "generated_resumes/Andrew Grossman - $name - Resume.pdf" --resume "$file" --theme jsonresume-theme-relaxed 2>&1)
-          echo "$pdf_out"
-          if echo "$pdf_out" | grep -q "createPdf errored out"; then
-            echo "ERROR: PDF generation failed for $name"
-            failed=1
-          fi
-          node_modules/.bin/resume export "generated_resumes/Andrew Grossman - $name - Resume.html" --resume "$file" --theme jsonresume-theme-relaxed
+          for ext in pdf html; do
+            out="generated_resumes/Andrew Grossman - $name - Resume.$ext"
+            rm -f "$out"
+            # resume-cli exits non-zero on failure; also require a non-empty output file.
+            if ! node_modules/.bin/resume export "$out" --resume "$file" --theme jsonresume-theme-relaxed || [ ! -s "$out" ]; then
+              echo "::error::${ext^^} generation failed for $name"
+              failed=1
+            fi
+          done
         done
         exit $failed
 
